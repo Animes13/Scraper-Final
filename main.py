@@ -91,7 +91,7 @@ def buscar_anime_por_url_ou_fuzzy(titulo, url=None):
 # --------------------------------------------------
 # FUNÇÃO PRINCIPAL
 # --------------------------------------------------
-def main(max_pages=1, delay=1.5):
+def main(max_pages=None, delay=1.5):
     anime_list_scraper = GoyabuAnimeListScraper()
     anime_page_scraper = GoyabuAnimePageScraper()
     episode_page_scraper = GoyabuEpisodePageScraper()
@@ -100,13 +100,21 @@ def main(max_pages=1, delay=1.5):
 
     print("🚀 Iniciando scraper híbrido Goyabu + AniList + Tradução + Fuzzy Search")
 
-    for pagina in range(1, max_pages + 1):
+    pagina = 1
+    while True:
+        if max_pages and pagina > max_pages:
+            break
+
         print(f"\n📄 Página {pagina}")
         try:
             animes = anime_list_scraper.listar(pagina)
         except Exception as e:
             print("❌ Erro ao listar animes:", e)
-            continue
+            break
+
+        if not animes:
+            print("✅ Não há mais animes nesta página, finalizando scraping")
+            break
 
         for anime in animes:
             print(f"\n🎬 Anime: {anime['titulo']}")
@@ -190,6 +198,9 @@ def main(max_pages=1, delay=1.5):
             salvar_parcial(resultado_final)
             time.sleep(delay)
 
+        pagina += 1
+        time.sleep(delay)
+
     salvar_final(resultado_final)
     print("\n✅ Scraping finalizado com sucesso!")
 
@@ -208,4 +219,4 @@ def salvar_final(data):
 # ENTRYPOINT
 # --------------------------------------------------
 if __name__ == "__main__":
-    main(max_pages=1, delay=1.2)
+    main(max_pages=None, delay=1.2)  # max_pages=None percorre todas as páginas
