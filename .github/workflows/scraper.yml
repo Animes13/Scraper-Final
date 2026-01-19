@@ -26,12 +26,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install googletrans==4.0.0-rc1 requests beautifulsoup4 deep-translator beautifulsoup4
+          pip install googletrans==4.0.0-rc1 requests beautifulsoup4 deep-translator google-genai
 
       # 4️⃣ Roda o scraper
       - name: Run scraper
         run: |
           python main.py
+        env:
+          GENAI_API_KEY: ${{ secrets.GENAI_API_KEY }}  # chave da Gemini como secret
 
       # 5️⃣ Commit e push do JSON gerado
       - name: Commit output
