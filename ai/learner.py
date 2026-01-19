@@ -14,7 +14,7 @@ MIN_SCORE = 0.6
 class RuleLearner:
     """
     Aprende novas regras estruturais quando o scraper quebra.
-    No cria dados, apenas padres.
+    Não cria dados, apenas padrões.
     """
 
     def __init__(self):
@@ -38,36 +38,32 @@ class RuleLearner:
         """
 
         if not context.get("html"):
-<<<<<<< HEAD
-            raise RuntimeError("HTML vazio — IA no será chamada")
-=======
-            raise RuntimeError("HTML vazio - IA no será chamada")
->>>>>>> 825349a (Primeiro commit do scraper)
+            raise RuntimeError("HTML vazio - IA não será chamada")
 
-        # 1 chama Gemini
+        # 1️⃣ chama Gemini
         result = self.gemini.analyze(context)
 
-        # 2 valida estrutura mínima
+        # 2️⃣ valida estrutura mínima
         if not self._basic_validation(result):
             raise RuntimeError("Resposta da IA inválida")
 
         if result["confidence"] < MIN_CONFIDENCE:
             raise RuntimeError("Confiança da IA muito baixa")
 
-        # 3 normaliza
+        # 3️⃣ normaliza
         rule = self._normalize_rule(result, context["stage"])
         if not rule:
             raise RuntimeError("Falha ao normalizar regra")
 
-        # 4 valida regra
+        # 4️⃣ valida regra
         if not self.validator.validate(rule, context["stage"]):
             raise RuntimeError("Regra inválida segundo Validator")
 
-        # 5 evita duplicaço
+        # 5️⃣ evita duplicação
         if self._rule_exists(rule, context["stage"]):
             return {"status": "exists"}
 
-        # 6 salva
+        # 6️⃣ salva
         self._save_rule(rule, context["stage"])
 
         return {
@@ -76,7 +72,7 @@ class RuleLearner:
         }
 
     # --------------------------------------------------
-    # VALIDAÇO BÁSICA DO JSON
+    # VALIDAÇÃO BÁSICA DO JSON
     # --------------------------------------------------
     def _basic_validation(self, data: Dict[str, Any]) -> bool:
         return (
@@ -142,7 +138,7 @@ class RuleLearner:
         return rule
 
     # --------------------------------------------------
-    # DUPLICAÇO
+    # DUPLICAÇÃO
     # --------------------------------------------------
     def _rule_exists(self, rule: Dict[str, Any], stage: str) -> bool:
         rules = self.loader.get_rules(stage)
