@@ -42,6 +42,8 @@ def normalizar_titulo(titulo):
     """Remove acentos, aspas curvas, parênteses e espaços duplicados"""
     import unicodedata
     t = titulo.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+    t = re.sub(r'\(.*?\)', '', t)  # Remove conteúdo entre parênteses
+    t = t.split(":")[0]  # Pega só a parte antes de ':' para subtítulos
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
     t = re.sub(r'\s+', ' ', t).strip()
     return t
