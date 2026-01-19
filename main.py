@@ -3,17 +3,13 @@
 import json
 import time
 from pathlib import Path
-
+from difflib import get_close_matches
 from deep_translator import GoogleTranslator
-
-# Teste rápido de tradução
-texto_traduzido = GoogleTranslator(source='auto', target='pt').translate("Hello World")
-print(texto_traduzido)  # <-- apenas para conferir tradução
 
 from sites.goyabu.anime_list import GoyabuAnimeListScraper
 from sites.goyabu.anime_page import GoyabuAnimePageScraper
 from sites.goyabu.episode_page import GoyabuEpisodePageScraper
-from sites.goyabu.AniList.anilist_api import buscar_detalhes_anime_por_titulo
+from sites.goyabu.AniList.anilist_api import buscar_detalhes_anime_por_titulo, buscar_titulos_disponiveis
 
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -23,9 +19,6 @@ OUTPUT_FILE = OUTPUT_DIR / "animes.json"
 # FUNÇÃO AUXILIAR PARA JSON
 # --------------------------------------------------
 def to_dict(obj):
-    """
-    Converte recursivamente um objeto AniList (ou qualquer objeto) em dicionário JSON-friendly.
-    """
     if obj is None:
         return None
     elif isinstance(obj, (str, int, float, bool)):
@@ -41,6 +34,24 @@ def to_dict(obj):
         return str(obj)
 
 # --------------------------------------------------
+# FUNÇÃO DE BUSCA FUZZY NO AniList
+# --------------------------------------------------
+def buscar_anime_fuzzy(titulo):
+    """
+    Tenta encontrar um anime no AniList usando busca fuzzy.
+    """
+    # Lista de títulos disponíveis (romaji/english/native)
+    possiveis = buscar_titulos_disponiveis(titulo[:50])  # Busca inicial de possíveis matches
+    if not possiveis:
+        return None
+
+    # Seleciona o mais parecido
+    match = get_close_matches(titulo, possiveis, n=1, cutoff=0.6)  # 60% de similaridade mínima
+    if match:
+        return buscar_detalhes_anime_por_titulo(match[0])
+    return None
+
+# --------------------------------------------------
 # FUNÇÃO PRINCIPAL
 # --------------------------------------------------
 def main(max_pages=1, delay=1.5):
@@ -50,7 +61,7 @@ def main(max_pages=1, delay=1.5):
 
     resultado_final = []
 
-    print("🚀 Iniciando scraper híbrido Goyabu + AniList + Tradução")
+    print("🚀 Iniciando scraper híbrido Goyabu + AniList + Tradução + Fuzzy Search")
 
     for pagina in range(1, max_pages + 1):
         print(f"\n📄 Página {pagina}")
@@ -64,13 +75,13 @@ def main(max_pages=1, delay=1.5):
         for anime in animes:
             print(f"\n🎬 Anime: {anime['titulo']}")
 
-            # Busca AniList com título completo
-            ani_data = buscar_detalhes_anime_por_titulo(anime["titulo"])
+            # Busca AniList usando fuzzy search
+            ani_data = buscar_anime_fuzzy(anime["titulo"])
             if not ani_data:
                 # Segunda tentativa com primeiros 20 caracteres
                 titulo_parcial = anime["titulo"][:20]
-                print(f"🔄 AniList não encontrou '{anime['titulo']}', tentando parcial: '{titulo_parcial}'")
-                ani_data = buscar_detalhes_anime_por_titulo(titulo_parcial)
+                print(f"🔄 AniList não encontrou '{anime['titulo']}', tentando parcial fuzzy: '{titulo_parcial}'")
+                ani_data = buscar_anime_fuzzy(titulo_parcial)
 
             # Preenche objeto base do Goyabu
             anime_obj = {
@@ -88,7 +99,6 @@ def main(max_pages=1, delay=1.5):
                     descricao_pt = ""
                     if descricao_original:
                         try:
-                            # Tradução para português usando deep-translator
                             descricao_pt = GoogleTranslator(source='auto', target='pt').translate(descricao_original)
                         except Exception as e:
                             print(f"⚠️ Erro na tradução de '{anime['titulo']}': {e}")
@@ -171,7 +181,4 @@ def salvar_final(data):
 # ENTRYPOINT
 # --------------------------------------------------
 if __name__ == "__main__":
-    main(
-        max_pages=1,  # 📌 aumente com cuidado
-        delay=1.2      # ⏱️ evita bloqueio
-    )
+    main(max_pages=1, delay=1.2)
