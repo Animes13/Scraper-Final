@@ -39,16 +39,17 @@ jobs:
         run: |
           python main.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # chave da Gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # 6️⃣ Commit e push do JSON gerado
       - name: Commit output
         run: |
-          if [ -f scraper/output/animes.json ]; then
+          if [ -f output/animes.json ]; then
             git config --global user.name "github-actions"
             git config --global user.email "actions@github.com"
-            git add scraper/output/animes.json
-            git commit -m "Atualizar scraper output [skip ci]" || echo "Sem alterações para commit"
+            git add output/animes.json
+            git commit -m "Atualizar output [skip ci]" || echo "Sem alterações para commit"
             git push
           else
-            echo "Arquivo scraper/output/animes.json não existe, pulando commit"
+            echo "Arquivo output/animes.json não existe, pulando commit"
+          fi
