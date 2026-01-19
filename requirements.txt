@@ -1,5 +1,7 @@
-deep-translator
-google-genai
 requests
 beautifulsoup4
+lxml
+html5lib
+deep-translator
+google-genai
 httpx

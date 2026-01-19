@@ -1,113 +1,123 @@
 # ai/gemini.py
 import os
-import json
 import time
+from typing import Dict, Any, Optional
+
 from google import genai
 from google.genai import types
 
 
+COOLDOWN_SECONDS = 90
+MAX_RETRIES = 4
+
+
+class GeminiPool:
+    def __init__(self):
+        self.keys = [
+            os.getenv("GEMINI_KEY_1"),
+            os.getenv("GEMINI_KEY_2"),
+            os.getenv("GEMINI_KEY_3"),
+            os.getenv("GEMINI_KEY_4"),
+        ]
+        self.keys = [k for k in self.keys if k]
+        if not self.keys:
+            raise RuntimeError("Nenhuma GEMINI_KEY configurada")
+
+        self.cooldown = {k: 0 for k in self.keys}
+        self.index = 0
+
+    def _next_key(self) -> Optional[str]:
+        now = time.time()
+        for _ in range(len(self.keys)):
+            key = self.keys[self.index]
+            self.index = (self.index + 1) % len(self.keys)
+            if self.cooldown[key] <= now:
+                return key
+        return None
+
+    def mark_failed(self, key: str):
+        self.cooldown[key] = time.time() + COOLDOWN_SECONDS
+
+
 class GeminiClient:
-    """
-    Cliente Gemini 2.5 Flash
-    - Otimizado para análise estrutural de HTML/JS
-    - Uso seguro no Free Tier
-    - Retorna APENAS JSON válido
-    """
-
-    def __init__(
-        self,
-        model="gemini-2.5-flash",
-        temperature=0.2,
-        max_output_tokens=2048,
-        retries=2
-    ):
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            raise RuntimeError("GEMINI_API_KEY não definida no ambiente")
-
-        self.client = genai.Client(api_key=api_key)
-        self.model = model
-        self.temperature = temperature
-        self.max_output_tokens = max_output_tokens
-        self.retries = retries
+    def __init__(self):
+        self.pool = GeminiPool()
 
     # --------------------------------------------------
-    # PROMPT BASE (CONTRATO RÍGIDO)
+    # PROMPT BASE (ESTRUTURAL, NÃO CRIATIVO)
     # --------------------------------------------------
-    def _system_prompt(self):
-        return (
-            "Você é um analisador técnico de HTML e JavaScript.\n"
-            "Sua tarefa é identificar padrões estruturais estáveis.\n"
-            "Retorne SOMENTE JSON válido.\n"
-            "Não explique.\n"
-            "Não use markdown.\n"
-            "Não invente dados.\n"
-            "Não inclua texto fora do JSON.\n"
-        )
+    def _build_prompt(self, ctx: Dict[str, Any]) -> str:
+        return f"""
+Você é um analisador de HTML para scraping.
+NÃO invente dados.
+NÃO crie IDs.
+NÃO chute seletores.
 
-    # --------------------------------------------------
-    # PROMPT POR CONTEXTO
-    # --------------------------------------------------
-    def _context_prompt(self, context):
-        if context == "anime_list":
-            return (
-                "Analise esta página de lista de animes.\n"
-                "Identifique os cards principais repetidos.\n"
-                "Crie uma strategy com:\n"
-                "- selector do card\n"
-                "- selector do título\n"
-                "- selector do link\n"
-            )
+Tarefa:
+Identificar padrões estruturais estáveis no HTML abaixo.
 
-        if context == "anime_page":
-            return (
-                "Analise esta página de anime.\n"
-                "Identifique onde os episódios são definidos.\n"
-                "Priorize dados em JavaScript.\n"
-            )
+Contexto:
+Anime: {ctx.get("anime")}
+URL: {ctx.get("url")}
+Etapa: {ctx.get("stage")}
+Erro: {ctx.get("error_type")}
 
-        if context == "episode_page":
-            return (
-                "Analise esta página de episódio.\n"
-                "Identifique onde está a URL criptografada do player.\n"
-            )
+HTML:
+{ctx.get("html")}
 
-        raise ValueError(f"Contexto desconhecido: {context}")
+Responda APENAS em JSON válido no formato:
+
+{{
+  "type": "episode_list | selector_fix | title_mapping",
+  "confidence": 0.0,
+  "rules": {{
+    "css": "...",
+    "xpath": "...",
+    "regex": "..."
+  }}
+}}
+"""
 
     # --------------------------------------------------
-    # CHAMADA PRINCIPAL
+    # CALL
     # --------------------------------------------------
-    def analyze_html(self, html, context):
-        prompt = (
-            self._system_prompt()
-            + "\n"
-            + self._context_prompt(context)
-            + "\nHTML:\n"
-            + html[:120_000]  # proteção de tokens
-        )
-
+    def analyze(self, context: Dict[str, Any]) -> Dict[str, Any]:
         last_error = None
 
-        for _ in range(self.retries):
+        for _ in range(MAX_RETRIES):
+            key = self.pool._next_key()
+            if not key:
+                break
+
             try:
-                response = self.client.models.generate_content(
-                    model=self.model,
+                client = genai.Client(api_key=key)
+                prompt = self._build_prompt(context)
+
+                response = client.models.generate_content(
+                    model="gemini-1.5-pro",
                     contents=prompt,
                     config=types.GenerateContentConfig(
-                        temperature=self.temperature,
-                        max_output_tokens=self.max_output_tokens,
-                        response_mime_type="application/json"
-                    ),
+                        temperature=0.1,
+                        top_p=0.9,
+                        max_output_tokens=1024,
+                    )
                 )
 
-                data = json.loads(response.text.strip())
-                if not isinstance(data, dict):
-                    raise ValueError("Resposta não é um objeto JSON")
-
-                return data
+                text = response.text.strip()
+                return self._safe_json(text)
 
             except Exception as e:
-                last_error = e
-                time.sleep(1.5)
+                last_error = str(e)
+                self.pool.mark_failed(key)
 
-        raise RuntimeError(f"Gemini falhou: {last_error}")
+        raise RuntimeError(f"IA_FALHA: {last_error}")
+
+    # --------------------------------------------------
+    # JSON SAFE PARSE
+    # --------------------------------------------------
+    def _safe_json(self, text: str) -> Dict[str, Any]:
+        import json
+        try:
+            return json.loads(text)
+        except Exception:
+            raise ValueError("Resposta da IA não é JSON válido")

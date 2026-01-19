@@ -1,55 +1,73 @@
-name: Scraper Goyabu + AniList
+name: Scraper Goyabu Self-Healing + AniList
 
 on:
-  workflow_dispatch:   # permite rodar manualmente
+  workflow_dispatch:
   schedule:
     - cron: "0 2 * * *"  # diário às 2h UTC
 
 jobs:
-  run-scraper:
+  scraper:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checa o código
+      # 1️⃣ Checkout
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          persist-credentials: true  # permite push automático
+          persist-credentials: true
 
-      # 2️⃣ Configura Python
+      # 2️⃣ Setup Python
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # 3️⃣ Instala dependências
+      # 3️⃣ Instalar dependências via requirements.txt
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install googletrans==4.0.0-rc1 requests beautifulsoup4 deep-translator google-genai
+          pip install -r requirements.txt
 
-      # 4️⃣ Garante que a pasta e arquivo existam
-      - name: Prepare output
+      # 4️⃣ Preparar estrutura de pastas e arquivos
+      - name: Prepare output folders
         run: |
-          mkdir -p scraper/output
-          touch scraper/output/animes.json
+          mkdir -p output/ERROS rules
+          [ -f output/animes.json ] || echo "[]" > output/animes.json
+          [ -f output/ERROS/dashboard.json ] || echo '{}' > output/ERROS/dashboard.json
+          touch output/ERROS/Erros.txt
 
-      # 5️⃣ Roda o scraper
-      - name: Run scraper
-        run: |
-          python main.py
+      # 5️⃣ Rodar scraper (primeira passada)
+      - name: Run scraper (initial)
+        run: python main.py
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
+          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
+          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
+          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
 
-      # 6️⃣ Commit e push do JSON gerado
-      - name: Commit output
+      # 6️⃣ AutoFix (IA aprende + marca retry)
+      - name: Run AutoFix
+        run: python auto_fix.py
+        env:
+          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
+          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
+          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
+          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
+
+      # 7️⃣ Rodar scraper novamente (retry pós-IA)
+      - name: Run scraper (retry after IA)
+        run: python main.py
+        env:
+          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
+          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
+          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
+          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
+
+      # 8️⃣ Commit automático
+      - name: Commit & Push results
         run: |
-          if [ -f output/animes.json ]; then
-            git config --global user.name "github-actions"
-            git config --global user.email "actions@github.com"
-            git add output/animes.json
-            git commit -m "Atualizar output [skip ci]" || echo "Sem alterações para commit"
-            git push
-          else
-            echo "Arquivo output/animes.json não existe, pulando commit"
-          fi
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add output/animes.json output/ERROS rules || true
+          git commit -m "🤖 Scraper auto-healing update [skip ci]" || echo "Nada para commitar"
+          git push

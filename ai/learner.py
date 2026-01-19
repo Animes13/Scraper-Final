@@ -1,140 +1,154 @@
 # ai/learner.py
 from copy import deepcopy
+from typing import Dict, Any
 
 from ai.gemini import GeminiClient
-from rules.loader import RuleLoader
 from core.validator import Validator
+from rules.loader import RuleLoader
+
+
+MIN_CONFIDENCE = 0.55
+MIN_SCORE = 0.6
 
 
 class RuleLearner:
     """
-    ResponsÃ¡vel por:
-    - chamar Gemini quando o scraper quebra
-    - validar regras geradas
-    - converter para formato interno
-    - salvar no rules/
+    Aprende novas regras estruturais quando o scraper quebra.
+    No cria dados, apenas padres.
     """
 
     def __init__(self):
         self.gemini = GeminiClient()
+        self.validator = Validator()
         self.loader = RuleLoader()
 
     # --------------------------------------------------
     # API PRINCIPAL
     # --------------------------------------------------
-    def learn(self, html, context):
+    def learn(self, context: Dict[str, Any]) -> Dict[str, Any]:
         """
-        context:
-            anime_list
-            anime_page
-            episode_page
+        context esperado:
+        {
+            anime,
+            url,
+            stage,
+            error_type,
+            html
+        }
         """
-        raw_rule = self.gemini.analyze_html(html, context)
 
-        strategy = self._normalize_strategy(raw_rule, context)
-        if not strategy:
-            raise RuntimeError("IA retornou regra invÃ¡lida")
+        if not context.get("html"):
+            raise RuntimeError("HTML vazio — IA no será chamada")
 
-        self._save_strategy(context, strategy)
-        return strategy
+        # 1 chama Gemini
+        result = self.gemini.analyze(context)
 
-    # --------------------------------------------------
-    # NORMALIZA REGRA DA IA
-    # --------------------------------------------------
-    def _normalize_strategy(self, data, context):
-        if not isinstance(data, dict):
-            return None
+        # 2 valida estrutura mínima
+        if not self._basic_validation(result):
+            raise RuntimeError("Resposta da IA inválida")
 
-        if context == "anime_list":
-            return self._normalize_anime_list(data)
+        if result["confidence"] < MIN_CONFIDENCE:
+            raise RuntimeError("Confiança da IA muito baixa")
 
-        if context == "anime_page":
-            return self._normalize_anime_page(data)
+        # 3 normaliza
+        rule = self._normalize_rule(result, context["stage"])
+        if not rule:
+            raise RuntimeError("Falha ao normalizar regra")
 
-        if context == "episode_page":
-            return self._normalize_episode_page(data)
+        # 4 valida regra
+        if not self.validator.validate(rule, context["stage"]):
+            raise RuntimeError("Regra inválida segundo Validator")
 
-        return None
+        # 5 evita duplicaço
+        if self._rule_exists(rule, context["stage"]):
+            return {"status": "exists"}
 
-    # --------------------------------------------------
-    # LISTA DE ANIMES
-    # --------------------------------------------------
-    def _normalize_anime_list(self, data):
-        card = data.get("card") or data.get("cards") or data
-        selector = card.get("selector")
-        title_sel = card.get("title")
-        link_sel = card.get("link")
-
-        if not selector or not title_sel or not link_sel:
-            return None
+        # 6 salva
+        self._save_rule(rule, context["stage"])
 
         return {
-            "name": "ai_generated_anime_list",
-            "selector": selector,
-            "fields": {
-                "titulo": {
-                    "type": "text",
-                    "selector": title_sel
-                },
-                "link": {
-                    "type": "css",
-                    "selector": link_sel,
-                    "attr": "href"
+            "status": "learned",
+            "rule": rule
+        }
+
+    # --------------------------------------------------
+    # VALIDAÇO BÁSICA DO JSON
+    # --------------------------------------------------
+    def _basic_validation(self, data: Dict[str, Any]) -> bool:
+        return (
+            isinstance(data, dict)
+            and "type" in data
+            and "confidence" in data
+            and "rules" in data
+            and isinstance(data["rules"], dict)
+        )
+
+    # --------------------------------------------------
+    # NORMALIZA REGRA
+    # --------------------------------------------------
+    def _normalize_rule(self, data: Dict[str, Any], stage: str) -> Dict[str, Any]:
+        rules = data["rules"]
+
+        rule = {
+            "name": f"ai_{stage}",
+            "score": max(data["confidence"], MIN_SCORE),
+            "source": "gemini",
+            "stage": stage,
+            "match": {},
+            "extract": {}
+        }
+
+        # ---------- anime_list ----------
+        if stage == "anime_list":
+            if not rules.get("css"):
+                return None
+
+            rule["match"]["card"] = rules["css"]
+            rule["extract"] = {
+                "title": {"type": "text", "selector": rules["css"] + " h3"},
+                "link": {"type": "attr", "selector": "a", "attr": "href"},
+            }
+
+        # ---------- anime_page ----------
+        elif stage == "anime_page":
+            if not rules.get("regex"):
+                return None
+
+            rule["match"]["episodes"] = {
+                "type": "regex",
+                "pattern": rules["regex"]
+            }
+
+        # ---------- episode_page ----------
+        elif stage == "episode_page":
+            if not rules.get("css"):
+                return None
+
+            rule["extract"] = {
+                "player": {
+                    "type": "attr",
+                    "selector": rules["css"],
+                    "attr": "data-blogger-url-encrypted"
                 }
-            },
-            "score": 0.6
-        }
+            }
 
-    # --------------------------------------------------
-    # PÃGINA DO ANIME
-    # --------------------------------------------------
-    def _normalize_anime_page(self, data):
-        pattern = data.get("pattern")
-        if not pattern or "allEpisodes" not in pattern:
+        else:
             return None
 
-        return {
-            "name": "ai_generated_anime_page",
-            "type": "regex",
-            "pattern": pattern,
-            "score": 0.6
-        }
+        return rule
 
     # --------------------------------------------------
-    # PÃGINA DO EPISÃ“DIO
+    # DUPLICAÇO
     # --------------------------------------------------
-    def _normalize_episode_page(self, data):
-        selector = data.get("selector")
-        attr = data.get("attr") or "data-blogger-url-encrypted"
-
-        if not selector:
-            return None
-
-        return {
-            "name": "ai_generated_episode_page",
-            "selector": selector,
-            "attr": attr,
-            "score": 0.6
-        }
-
-    # --------------------------------------------------
-    # SALVAR REGRA
-    # --------------------------------------------------
-    def _save_strategy(self, context, strategy):
-        file_map = {
-            "anime_list": "anime_list.json",
-            "anime_page": "anime_page.json",
-            "episode_page": "episode_page.json"
-        }
-
-        filename = file_map.get(context)
-        if not filename:
-            raise ValueError("Contexto invÃ¡lido para salvar regra")
-
-        # evita duplicaÃ§Ã£o
-        rules = self.loader.get_strategies(filename)
+    def _rule_exists(self, rule: Dict[str, Any], stage: str) -> bool:
+        rules = self.loader.get_rules(stage)
         for r in rules:
-            if r.get("selector") == strategy.get("selector"):
-                return
+            if r.get("match") == rule.get("match"):
+                return True
+        return False
 
-        self.loader.add_strategy(filename, strategy)
+    # --------------------------------------------------
+    # SALVAR
+    # --------------------------------------------------
+    def _save_rule(self, rule: Dict[str, Any], stage: str):
+        self.loader.add_rule(stage, deepcopy(rule))
