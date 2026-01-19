@@ -31,7 +31,7 @@ jobs:
       # 4️⃣ Roda o scraper
       - name: Run scraper
         run: |
-          python scraper/main.py
+          python main.py
 
       # 5️⃣ Commit e push do JSON gerado
       - name: Commit output
