@@ -1,10 +1,9 @@
 name: Scraper Goyabu + AniList
 
-# Dispara manualmente ou diariamente
 on:
-  workflow_dispatch:   # manual
-  schedule:            # automático diário às 2h UTC
-    - cron: "0 2 * * *"
+  workflow_dispatch:   # permite rodar manualmente
+  schedule:
+    - cron: "0 2 * * *"  # diário às 2h UTC
 
 jobs:
   run-scraper:
@@ -14,6 +13,8 @@ jobs:
       # 1️⃣ Checa o código
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # permite push automático
 
       # 2️⃣ Configura Python
       - name: Setup Python
@@ -25,16 +26,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install googletrans==4.0.0-rc1 requests beautifulsoup4
+          pip install googletrans==4.0.0-rc1 requests beautifulsoup4 deep-translator beautifulsoup4
 
       # 4️⃣ Roda o scraper
       - name: Run scraper
         run: |
           python scraper/main.py
 
-      # 5️⃣ Salva o JSON como artifact
-      - name: Upload output
-        uses: actions/upload-artifact@v3
-        with:
-          name: animes-json
-          path: scraper/output/animes.json
+      # 5️⃣ Commit e push do JSON gerado
+      - name: Commit output
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add scraper/output/animes.json
+          git commit -m "Atualizar scraper output [skip ci]" || echo "Sem alterações para commit"
+          git push
