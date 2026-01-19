@@ -31,9 +31,9 @@ jobs:
       # 4️⃣ Roda o scraper
       - name: Run scraper
         run: |
-          python main.py
+          python scraper/main.py
         env:
-          GENAI_API_KEY: ${{ secrets.GENAI_API_KEY }}  # chave da Gemini como secret
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # chave da Gemini
 
       # 5️⃣ Commit e push do JSON gerado
       - name: Commit output
