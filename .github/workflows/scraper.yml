@@ -1,0 +1,40 @@
+name: Scraper Goyabu + AniList
+
+# Dispara manualmente ou diariamente
+on:
+  workflow_dispatch:   # manual
+  schedule:            # automático diário às 2h UTC
+    - cron: "0 2 * * *"
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checa o código
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Configura Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      # 3️⃣ Instala dependências
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install googletrans==4.0.0-rc1 requests beautifulsoup4
+
+      # 4️⃣ Roda o scraper
+      - name: Run scraper
+        run: |
+          python scraper/main.py
+
+      # 5️⃣ Salva o JSON como artifact
+      - name: Upload output
+        uses: actions/upload-artifact@v3
+        with:
+          name: animes-json
+          path: scraper/output/animes.json

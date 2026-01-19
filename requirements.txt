@@ -1,0 +1,5 @@
+deep-translator
+google-genai
+requests
+beautifulsoup4
+httpx
