@@ -1,0 +1,12 @@
+{
+  "context": "episode_page",
+  "version": 1,
+  "strategies": [
+    {
+      "name": "player_tab_encrypted",
+      "selector": "button.player-tab[data-blogger-url-encrypted]",
+      "attr": "data-blogger-url-encrypted",
+      "score": 1.05
+    }
+  ]
+}

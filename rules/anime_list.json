@@ -1,0 +1,22 @@
+{
+  "context": "anime_list",
+  "version": 1,
+  "strategies": [
+    {
+      "name": "default_article",
+      "selector": "article",
+      "fields": {
+        "link": {
+          "type": "css",
+          "selector": "a[href]",
+          "attr": "href"
+        },
+        "titulo": {
+          "type": "text",
+          "selector": "a"
+        }
+      },
+      "score": 2.3
+    }
+  ]
+}

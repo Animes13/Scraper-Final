@@ -1,0 +1,704 @@
+[
+  {
+    "nome": "Jingai Kyoushitsu no Ningengirai Kyoushi",
+    "tipo": "Legendado",
+    "nota": "4.3",
+    "url": "https://goyabu.io/anime/jingai-kyoushitsu-no-ningengirai-kyoushi",
+    "episodios": [
+      {
+        "episodio": 1,
+        "url": "https://goyabu.io/69046",
+        "streams": [
+          {
+            "url": "RWpxWGF1R2djQld5OU9VN2Y5cWhsRk02WEc4alliRU9NMm9adjVrWkxOWGNBSlJOeWhRWWRtWmM1RU9aSnVEdTh6a3NGZVczcm1HdHBzeFBxbVBpV3VfSy1sUHRjQWpqU1hBbUpwS1FFV0pfRDhReEhVQ09Yd1BPamNHWFRBaG9RZlR6eGQ1djZEQT1uZWtvdD9nLm9lZGl2L21vYy5yZWdnb2xiLnd3dy8vOnNwdHRo",
+            "type": "blogger"
+          }
+        ]
+      },
+      {
+        "episodio": 2,
+        "url": "https://goyabu.io/69048",
+        "streams": [
+          {
+            "url": "SUFIRndEUGtXUWpGQWpHU01DVDhGR3hjcWc5aFBQQUI4UVhBNERQVURmUEU3eXFVS2hYVVU1V18xNUN1ZlhIMl9GX3JsMUdfeTVLbWNMSk1HYmpkU1J6QS1acFFWNXN6a2pjcjBkNFA3Ty1aTUVuMUxrWTNoY3d1b3RrR18tdHhta3AyeWQ1djZEQT1uZWtvdD9nLm9lZGl2L21vYy5yZWdnb2xiLnd3dy8vOnNwdHRo",
+            "type": "blogger"
+          }
+        ]
+      }
+    ],
+    "títulos": {
+      "romaji": "",
+      "english": "",
+      "native": ""
+    },
+    "descricoes": "After a traumatic incident ends his teaching career, Rei Hitoma is certain he hates humans. Yet when he sees a job for “a teacher who truly cares for their students,” he’s compelled to apply. Before he knows it, he’s hired—only to find out his students are demi-humans. What begins as a job becomes a journey for healing for both a teacher who’s lost faith in humanity and students who dream of it.<br>\n<br>\n(Source: Crunchyroll)",
+    "descricoes_pt": "Depois que um incidente traumático encerra sua carreira docente, Rei Hitoma tem certeza de que odeia os humanos. No entanto, quando vê um emprego para “um professor que realmente se preocupa com os seus alunos”, sente-se obrigado a candidatar-se. Antes que ele perceba, ele é contratado – apenas para descobrir que seus alunos são demi-humanos. O que começa como um trabalho se torna uma jornada de cura tanto para um professor que perdeu a fé na humanidade quanto para os alunos que sonham com isso.<br>\n<br>\n(Fonte: Crunchyroll)",
+    "generos": [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "episodes_total": 13,
+    "duration": 24,
+    "status": "RELEASING",
+    "averageScore": 59,
+    "popularity": 6896,
+    "favourites": 73,
+    "studios": [
+      "KADOKAWA",
+      "Asread",
+      "ABC Animation",
+      "Pony Canyon",
+      "AT-X",
+      "ANYCOLOR Inc."
+    ],
+    "staff": [
+      {
+        "name": "Katsuhiko Takayama",
+        "role": "Series Composition",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102034-gxumMlPS4K3P.jpg"
+      },
+      {
+        "name": "Akira Iwanaga",
+        "role": "Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Hidetsugu Hirayama",
+        "role": "Sub Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Makoto Miyazaki",
+        "role": "Music",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109497-jkqmjeZXsLEO.png"
+      },
+      {
+        "name": "Saori Oonishi",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n114884-UzAes6hUiiOJ.jpg"
+      },
+      {
+        "name": "Sora Amamiya",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n116517-NQh6ewlCwzBN.jpg"
+      },
+      {
+        "name": "Rui Tanabe",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118444-ftV3GueuH2WQ.png"
+      },
+      {
+        "name": "Maria Naganawa",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118923-bYbaw5gwD25l.png"
+      },
+      {
+        "name": "Chika Kojima",
+        "role": "Sub Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Junko Nagasawa",
+        "role": "Art Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Masayoshi Ooishi",
+        "role": "Theme Song Performance (OP)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n123728-ydgvn7n6SSW6.png"
+      },
+      {
+        "name": "Sai Izumi",
+        "role": "Original Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n125532-gZLJQQ8SJl2H.jpg"
+      },
+      {
+        "name": "Kenji Takehara",
+        "role": "Director of Photography",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Kanako Watanabe",
+        "role": "Sub Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Junichi Itou",
+        "role": "Editing",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "You Fujisawa",
+        "role": "Art Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Ryuuta Nakahara",
+        "role": "Sound Effects",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Tomohiko Yaginuma",
+        "role": "Sound Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Maiko Okada",
+        "role": "Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Natsume Kurusu",
+        "role": "Original Story",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n260139-AtaYBvYpiayR.jpg"
+      },
+      {
+        "name": "Yuuta Nagaoka",
+        "role": "CG Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Chisato Shiota",
+        "role": "Color Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Rei Hitoma",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b374176-bUnKaTSmrwMU.png",
+        "voiceActors": [
+          {
+            "name": "Toshiki Masuda",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n107017-Jv96B9DBJOy9.png"
+          }
+        ]
+      },
+      {
+        "name": "Sui Usami",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b374177-9pi7LLv1sR8d.png",
+        "voiceActors": [
+          {
+            "name": "Maria Naganawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118923-bYbaw5gwD25l.png"
+          }
+        ]
+      },
+      {
+        "name": "Tobari Haneda",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b374178-KT9ydo7KzmyG.png",
+        "voiceActors": [
+          {
+            "name": "Rui Tanabe",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118444-ftV3GueuH2WQ.png"
+          }
+        ]
+      },
+      {
+        "name": "Kyouka Minazuki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b374179-qaO2nhYrNyp4.png",
+        "voiceActors": [
+          {
+            "name": "Sora Amamiya",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n116517-NQh6ewlCwzBN.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Isaki Oogami",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b374180-AnikFIX5KZHP.png",
+        "voiceActors": [
+          {
+            "name": "Saori Oonishi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n114884-UzAes6hUiiOJ.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Maki Okonogi",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380364-QFC1lKQ8A7f8.png",
+        "voiceActors": [
+          {
+            "name": "Yui Horie",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95028-MHT1m3E5wGZx.png"
+          }
+        ]
+      },
+      {
+        "name": "Aoi Wakaba",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380365-FjzD6pzOBUqt.png",
+        "voiceActors": [
+          {
+            "name": "Yui Ishikawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100142-k6RP0HzXffUG.png"
+          }
+        ]
+      },
+      {
+        "name": "Neneko Kurosawa",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380366-K9kAuJ1gBdB4.png",
+        "voiceActors": [
+          {
+            "name": "Reina Ueda",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118602-SFsQabl6KLu9.png"
+          }
+        ]
+      },
+      {
+        "name": "Machi Nezu",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380367-1j1WUeraS1gY.png",
+        "voiceActors": [
+          {
+            "name": "Misato Fukuen",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95207-TYPMa0JKUDAf.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Karin Ryuuzaki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380368-bWushKQJFb6M.png",
+        "voiceActors": [
+          {
+            "name": "Manami Numakura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104973-rymSxCu8uP0Y.png"
+          }
+        ]
+      },
+      {
+        "name": "Mirai Haruna",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382470-tFJUb3toY5te.png",
+        "voiceActors": [
+          {
+            "name": "Honoka Inoue",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129363-kFOtvmwj26Ab.png"
+          }
+        ]
+      },
+      {
+        "name": "Yuki Saotome",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382471-lnhwZyhHC2gX.png",
+        "voiceActors": [
+          {
+            "name": "Ai Kayano",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105765-DDK94me8axVv.png"
+          }
+        ]
+      },
+      {
+        "name": "Satoru Hoshino",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382472-uRVvgsPJoGjG.png",
+        "voiceActors": [
+          {
+            "name": "Makoto Ishii",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96126-jqtbbpjANhg6.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Shirou Karasuma",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382473-riBFk92NDuGa.png",
+        "voiceActors": [
+          {
+            "name": "Kazuhiko Inoue",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95021-9qAoAn6GNZ3S.png"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": 143135,
+        "title": {
+          "titles": "{'romaji': 'Jingai Kyoushitsu no Ningengirai Kyoushi', 'english': 'A Misanthrope Teaches a Class for Demi-Humans', 'native': '人外教室の人間嫌い教師'}"
+        },
+        "type": "MANGA"
+      },
+      {
+        "id": 152310,
+        "title": {
+          "titles": "{'romaji': 'Jingai Kyoushitsu no Ningengirai Kyoushi: Hitoma-sensei, Watashitachi ni Ningen wo Oshiete Kuremasu ka……?', 'english': 'A Misanthrope Teaches a Class for Demi-Humans', 'native': '人外教室の人間嫌い教師\\u3000ヒトマ先生、私たちに人間を教えてくれますか……？'}"
+        },
+        "type": "MANGA"
+      }
+    ],
+    "trailer": {
+      "site": "youtube",
+      "id": "rb0okw_1ExM"
+    },
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://jingai-kyoshitsu-anime.com/"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/jingaikyoshitsu"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GT00365542/a-misanthrope-teaches-a-class-for-demi-humans"
+      }
+    ],
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198374-ROZU3qJGX4uS.jpg",
+    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/198374-cnzGgIW2KzHr.jpg"
+  },
+  {
+    "nome": "Ao no Miburo 2",
+    "tipo": "Legendado",
+    "nota": "0.0",
+    "url": "https://goyabu.io/anime/ao-no-miburo-2",
+    "episodios": [
+      {
+        "episodio": 1,
+        "url": "https://goyabu.io/69035",
+        "streams": [
+          {
+            "url": "eVhaZmVzSHVlQXhiblZaR1hDQ252emJmd0NrVDVhdnlselVTRjRwNkNpTE96M1VSaGlHMDkzc3dtVWFGckd0bnF3SzZVRzJUQklVdXNtRFZrZklrR25jWnduNFBFNEVaVl9xdjkwTjg2b05jaXlYY3V6WXgyTVhYYzdMLUc5aXBpdUFfNHhkNXY2REE9bmVrb3Q/Zy5vZWRpdi9tb2MucmVnZ29sYi53d3cvLzpzcHR0aA==",
+            "type": "blogger"
+          }
+        ]
+      },
+      {
+        "episodio": 2,
+        "url": "https://goyabu.io/69037",
+        "streams": [
+          {
+            "url": "RVVydUFzMElxWHRNSmNzUzdwZlZlYmRBMExySEt5Nmt4bnJTNk9RLXB5d3daUlhQQS1XV1R2TUdHNEtBMHhVQ1dRaE9BWkhBcDFIUWt5UEYzQmRlMzdpNElHMVZvOFBDMnNha1BlTVU2UFdzZDRLQVFLNlo2Z2JTWTZ6a1M2XzRHY0ExemQ1djZEQT1uZWtvdD9nLm9lZGl2L21vYy5yZWdnb2xiLnd3dy8vOnNwdHRo",
+            "type": "blogger"
+          }
+        ]
+      },
+      {
+        "episodio": 3,
+        "url": "https://goyabu.io/69039",
+        "streams": [
+          {
+            "url": "QV9WMDJ1M3p5d0VjT0hoT3dDX3AxNHBLMkNCSHF1Ujc1RVJkSjFqcG5BeVFnVHRGUEt6Rk1ObXRsV2lFblAzNzRJcG1ZczF2bmNfVnN4b0hHc2t4eEhZRHptcjlyUkNHVGNhaVdxeTUxaVRKejlfODlTZDdPOVdhM01EOGdSbjk5SVA4NHhkNXY2REE9bmVrb3Q/Zy5vZWRpdi9tb2MucmVnZ29sYi53d3cvLzpzcHR0aA==",
+            "type": "blogger"
+          }
+        ]
+      },
+      {
+        "episodio": 4,
+        "url": "https://goyabu.io/69041",
+        "streams": [
+          {
+            "url": "d3REa1dFa0ZYSzFOZDhqQy03VzlBTlUtckFYZlAxTTRqNXVIUExaLUp3bnAwOXpsVFc2b2tkbWRFVmstR0tvRWtpdUlHelVoWW80NWx4NUJOZWh4czdKeWhSX2Etcy02VEh6cFVhUjJ3SGFGTWVHRUpjcVM5dWJGQnBFZjJsbjd3bzh5ZDV2NkRBPW5la290P2cub2VkaXYvbW9jLnJlZ2dvbGIud3d3Ly86c3B0dGg=",
+            "type": "blogger"
+          }
+        ]
+      }
+    ],
+    "títulos": {
+      "romaji": "",
+      "english": "",
+      "native": ""
+    },
+    "descricoes": "The second season of <i>Ao no Miburo</i>.",
+    "descricoes_pt": "A segunda temporada de <i>Ao no Miburo</i>.",
+    "generos": [
+      "Drama"
+    ],
+    "episodes_total": null,
+    "duration": 24,
+    "status": "RELEASING",
+    "averageScore": 58,
+    "popularity": 2378,
+    "favourites": 29,
+    "studios": [
+      "Maho Film",
+      "YTV"
+    ],
+    "staff": [
+      {
+        "name": "Tsuyoshi Yasuda",
+        "role": "Original Creator",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n98369-C1MoSdvwjK6Q.jpg"
+      },
+      {
+        "name": "Yuuki Hayashi",
+        "role": "Music",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n99980-4xS4V6qrH3Ab.png"
+      },
+      {
+        "name": "Toshiki Kameyama",
+        "role": "Sound Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/103834-PKdTeVEzQMX3.jpg"
+      },
+      {
+        "name": "Kenta Ihara",
+        "role": "Series Composition",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n121054-BuB93AisYNhZ.png"
+      },
+      {
+        "name": "Miyako Nishida",
+        "role": "Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Kumiko Habara",
+        "role": "Director ",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Yuuko Ooba",
+        "role": "Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n162164-NKs7nPDaklz3.png"
+      },
+      {
+        "name": "Soushi Sakiyama",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n200035-G4Ky6IGj495b.png"
+      },
+      {
+        "name": "Ryousuke Yamada",
+        "role": "Theme Song Performance (OP)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n382009-zJ95kSrXaGap.jpg"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Nio Chirinu",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314370-ii4z88qi6FyV.png",
+        "voiceActors": [
+          {
+            "name": "Shuichirou Umeda",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n236715-AqVwesOw9zVK.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Hajime Saitou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314371-MlbmzMA8DY6a.png",
+        "voiceActors": [
+          {
+            "name": "Chiaki Kobayashi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n133507-oT1bd4Gax1Qg.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Tarou Tanaka",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314372-04TVeyedga5O.png",
+        "voiceActors": [
+          {
+            "name": "Shun Horie",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119869-mUUrORIQBlnB.png"
+          }
+        ]
+      },
+      {
+        "name": "Toshizo Hijikata",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314373-6iSwuGcEIQL2.png",
+        "voiceActors": [
+          {
+            "name": "Youhei Azakami",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109155-kQHazg0bG4Pv.png"
+          }
+        ]
+      },
+      {
+        "name": "Souji Okita",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314374-nUQ1DfRlfrus.png",
+        "voiceActors": [
+          {
+            "name": "Kenshou Ono",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95819-O4fosAY0a1Ml.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Isamu Kondou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314375-nvLvlH0Z6TnS.png",
+        "voiceActors": [
+          {
+            "name": "Tomokazu Sugita",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95002-nDIvHaynicEg.png"
+          }
+        ]
+      },
+      {
+        "name": "Kamo Serizawa",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b314376-mvbkxtpbbQVt.png",
+        "voiceActors": [
+          {
+            "name": "Ryouta Takeuchi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n107615-e4FrG8jtyQKY.png"
+          }
+        ]
+      },
+      {
+        "name": "Susumu Yamazaki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382002-IqOa6hoViCHd.jpg",
+        "voiceActors": [
+          {
+            "name": "Taku Yashiro",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119833-6CySrXDVAZ2X.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Totarou Asano",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "voiceActors": [
+          {
+            "name": "Rikuya Yasuda",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n128786-52fsMpv7qvCl.png"
+          }
+        ]
+      },
+      {
+        "name": "Masajirou Ozeki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "voiceActors": [
+          {
+            "name": "Ryou Sugisaki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106141-R83sRuA84w7s.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Kogorou Katsura",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382005-PsZ0uthzpx3B.jpg",
+        "voiceActors": [
+          {
+            "name": "Mitsuki Saiga",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95197-4Uxn95bRlvMu.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Yashirou Ozeki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "voiceActors": [
+          {
+            "name": "Kousuke Takaguchi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8996.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Ryouma Sakamoto",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "voiceActors": [
+          {
+            "name": "Junya Enoki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119319-yIrrUOUaJuSm.png"
+          }
+        ]
+      },
+      {
+        "name": "Shintarou Hayashi",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "voiceActors": [
+          {
+            "name": "Kazuki Ura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n220465-BUFqCWqdHyLo.png"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": 169258,
+        "title": {
+          "titles": "{'romaji': 'Ao no Miburo', 'english': 'Blue Miburo', 'native': '青のミブロ'}"
+        },
+        "type": "ANIME"
+      },
+      {
+        "id": 138883,
+        "title": {
+          "titles": "{'romaji': 'Ao no Miburo', 'english': 'The Blue Wolves of Mibu', 'native': '青のミブロ'}"
+        },
+        "type": "MANGA"
+      }
+    ],
+    "trailer": {
+      "site": "youtube",
+      "id": "7hWWDxF0hyo"
+    },
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://miburoanime.com/"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/miburo_anime/"
+      },
+      {
+        "site": "OceanVeil",
+        "url": "https://oceanveil.net/anime_titles/344"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GXJHM3GP8/blue-miburo"
+      }
+    ],
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189258-qhtrra5ebBm6.jpg",
+    "fanart": null
+  }
+]

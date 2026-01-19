@@ -1,0 +1,12 @@
+{
+  "context": "anime_page",
+  "version": 1,
+  "strategies": [
+    {
+      "name": "js_allEpisodes",
+      "type": "regex",
+      "pattern": "const allEpisodes\\s*=\\s*(\\[[\\s\\S]*?\\]);",
+      "score": 1.0
+    }
+  ]
+}
