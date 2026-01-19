@@ -15,7 +15,7 @@ DASHBOARD_FILE = DASHBOARD_DIR / "dashboard.json"
 ERROS_FILE = DASHBOARD_DIR / "Erros.txt"
 
 # --------------------------------------------------
-# UTILITÁRIOS
+# UTILITÃRIOS
 # --------------------------------------------------
 def gerar_id(texto: str) -> str:
     """Cria um hash curto para identificar cada erro unicamente"""
@@ -37,7 +37,7 @@ def salvar_dashboard(data: Dict[str, Any]):
 # PARSE DE ERROS
 # --------------------------------------------------
 def parse_erros() -> List[Dict[str, Any]]:
-    """Lê o Erros.txt e transforma em lista de dicionários"""
+    """LÃª o Erros.txt e transforma em lista de dicionÃ¡rios"""
     erros = []
     if not ERROS_FILE.exists():
         return erros
@@ -50,7 +50,7 @@ def parse_erros() -> List[Dict[str, Any]]:
                 continue
             if linha.startswith("="*60):
                 if bloco:
-                    # Gera ID único
+                    # Gera ID Ãºnico
                     bloco["error_id"] = gerar_id(bloco.get("TIPO", "") + bloco.get("URL", "") + bloco.get("ANIME", ""))
                     bloco["attempts"] = 0
                     bloco["fixed"] = False
@@ -62,7 +62,7 @@ def parse_erros() -> List[Dict[str, Any]]:
                 if ":" in linha:
                     k, v = linha.split(":", 1)
                     bloco[k.strip()] = v.strip()
-        # último bloco
+        # Ãºltimo bloco
         if bloco:
             bloco["error_id"] = gerar_id(bloco.get("TIPO", "") + bloco.get("URL", "") + bloco.get("ANIME", ""))
             bloco["attempts"] = 0
@@ -82,12 +82,12 @@ def atualizar_dashboard():
     novos_erros = parse_erros()
     existentes_ids = {e["error_id"] for e in dashboard["errors"]}
 
-    # Adiciona só os novos erros
+    # Adiciona sÃ³ os novos erros
     for e in novos_erros:
         if e["error_id"] not in existentes_ids:
             dashboard["errors"].append(e)
 
-    # Estatísticas rápidas
+    # EstatÃ­sticas rÃ¡pidas
     dashboard["stats"] = {
         "total_errors": len(dashboard["errors"]),
         "pending_retry": sum(1 for e in dashboard["errors"] if e.get("pending_retry")),
@@ -95,7 +95,7 @@ def atualizar_dashboard():
     }
 
     salvar_dashboard(dashboard)
-    print(f"📊 Dashboard atualizado — {len(dashboard['errors'])} erros no total")
+    print(f"ð Dashboard atualizado â {len(dashboard['errors'])} erros no total")
 
 # --------------------------------------------------
 # ENTRYPOINT

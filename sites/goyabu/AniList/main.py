@@ -12,12 +12,12 @@ processed_ids = set(data.get("processed_ids", []))
 for page in range(1, TOTAL_PAGES + 1):
     while True:
         try:
-            print(f"Buscando IDs da página {page}...")
+            print(f"Buscando IDs da pÃ¡gina {page}...")
             ids = buscar_ids_animes(page, PER_PAGE)
             if not ids:
-                print(f"Nenhum anime encontrado na página {page}, tentando novamente em 5s...")
+                print(f"Nenhum anime encontrado na pÃ¡gina {page}, tentando novamente em 5s...")
                 time.sleep(5)
-                continue  # Tenta novamente a mesma página
+                continue  # Tenta novamente a mesma pÃ¡gina
 
             for id_anime in ids:
                 if id_anime in processed_ids:
@@ -50,12 +50,12 @@ for page in range(1, TOTAL_PAGES + 1):
                         time.sleep(5)
                 time.sleep(1.5)  # evita sobrecarga na API
 
-            break  # Página processada com sucesso, vai para a próxima
+            break  # PÃ¡gina processada com sucesso, vai para a prÃ³xima
         except Exception as e:
-            print(f"Erro na página {page}: {e}, tentando novamente em 5s...")
+            print(f"Erro na pÃ¡gina {page}: {e}, tentando novamente em 5s...")
             time.sleep(5)
 
 # Salvar JSON final
 print(f"Salvando JSON final com {len(todos_animes)} animes...")
 salvar_json(todos_animes, list(processed_ids), OUTPUT_JSON)
-print("Concluído!")
+print("ConcluÃ­do!")

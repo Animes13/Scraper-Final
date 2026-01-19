@@ -44,17 +44,17 @@ class GeminiClient:
         self.pool = GeminiPool()
 
     # --------------------------------------------------
-    # PROMPT BASE (ESTRUTURAL, NÃO CRIATIVO)
+    # PROMPT BASE (ESTRUTURAL, NÃO CRIATIVO)
     # --------------------------------------------------
     def _build_prompt(self, ctx: Dict[str, Any]) -> str:
         return f"""
-Você é um analisador de HTML para scraping.
-NÃO invente dados.
-NÃO crie IDs.
-NÃO chute seletores.
+VocÃª Ã© um analisador de HTML para scraping.
+NÃO invente dados.
+NÃO crie IDs.
+NÃO chute seletores.
 
 Tarefa:
-Identificar padrões estruturais estáveis no HTML abaixo.
+Identificar padrÃµes estruturais estÃ¡veis no HTML abaixo.
 
 Contexto:
 Anime: {ctx.get("anime")}
@@ -65,7 +65,7 @@ Erro: {ctx.get("error_type")}
 HTML:
 {ctx.get("html")}
 
-Responda APENAS em JSON válido no formato:
+Responda APENAS em JSON vÃ¡lido no formato:
 
 {{
   "type": "episode_list | selector_fix | title_mapping",
@@ -120,4 +120,4 @@ Responda APENAS em JSON válido no formato:
         try:
             return json.loads(text)
         except Exception:
-            raise ValueError("Resposta da IA não é JSON válido")
+            raise ValueError("Resposta da IA nÃ£o Ã© JSON vÃ¡lido")

@@ -2,7 +2,7 @@ from typing import List, Optional
 
 class Title:
     """
-    Armazena títulos do anime em múltiplos idiomas.
+    Armazena tÃ­tulos do anime em mÃºltiplos idiomas.
     """
     def __init__(self, romaji: Optional[str] = None, english: Optional[str] = None, native: Optional[str] = None):
         self.titles = {
@@ -16,7 +16,7 @@ class Title:
 
 class Description:
     """
-    Armazena descrições em múltiplos idiomas. Por enquanto AniList retorna só original (geralmente inglês ou japonês).
+    Armazena descriÃ§Ãµes em mÃºltiplos idiomas. Por enquanto AniList retorna sÃ³ original (geralmente inglÃªs ou japonÃªs).
     """
     def __init__(self, original: Optional[str] = None, english: Optional[str] = None, portuguese: Optional[str] = None):
         self.descriptions = {

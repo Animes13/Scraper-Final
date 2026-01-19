@@ -20,7 +20,7 @@ class GoyabuAnimeListScraper:
         self.learner = RuleLearner()
 
     # --------------------------------------------------
-    # API PÚBLICA
+    # API PÃBLICA
     # --------------------------------------------------
     def listar(self, pagina=1):
         url = f"{BASE}/lista-de-animes/page/{pagina}?l=todos&pg={pagina}"
@@ -28,16 +28,16 @@ class GoyabuAnimeListScraper:
 
         animes = self._extract_with_rules(html)
 
-        # 🔁 fallback inteligente com IA
+        # ð fallback inteligente com IA
         if BreakDetector.should_trigger_ai("anime_list", animes):
-            print("⚠️ Regras falharam, acionando IA para aprender...")
+            print("â ï¸ Regras falharam, acionando IA para aprender...")
             self.learner.learn(html, "anime_list")
             animes = self._extract_with_rules(html)
 
         return animes
 
     # --------------------------------------------------
-    # EXTRAÇÃO BASEADA EM REGRAS
+    # EXTRAÃÃO BASEADA EM REGRAS
     # --------------------------------------------------
     def _extract_with_rules(self, html):
         soup = BeautifulSoup(html, "html.parser")
@@ -95,11 +95,11 @@ class GoyabuAnimeListScraper:
             if not item:
                 continue
 
-            # 🔗 normaliza link
+            # ð normaliza link
             if "link" in item:
                 item["link"] = urljoin(BASE, item["link"])
 
-            # valida estrutura mínima
+            # valida estrutura mÃ­nima
             if not Validator.anime_item(item):
                 continue
 

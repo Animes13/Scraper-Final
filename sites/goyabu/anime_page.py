@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 # sites/goyabu/anime_page.py
+
 import re
 import json
 from urllib.parse import urljoin
@@ -26,18 +28,27 @@ class GoyabuAnimePageScraper:
     def listar_episodios(self, anime_url):
         html = self.fetcher.get(anime_url)
 
-        # 🔑 1) MÉTODO CORRETO PARA GOYABU (JS)
+        # 1) MÉTODO CORRETO PARA GOYABU (JS)
         episodios = self._extract_from_js(html)
         if episodios:
             return episodios
 
-        # 🔁 2) FALLBACK: RULES (para aprendizado / compatibilidade)
+        # 2) FALLBACK: RULES (para aprendizado / compatibilidade)
         episodios = self._extract_with_rules(html)
 
-        # 🧠 3) SE TUDO FALHAR, IA APRENDE
+        # 3) SE TUDO FALHAR, IA APRENDE
         if BreakDetector.should_trigger_ai("episode_page", episodios):
             print("⚠️ Episódios não encontrados, acionando IA...")
-            self.learner.learn(html, "episode_page")
+
+            # Ajuste: enviar um dict 'context' em vez de dois argumentos
+            context = {
+                "html": html,
+                "stage": "episode_page",
+                "url": anime_url
+            }
+            self.learner.learn(context)
+
+            # Tenta novamente extrair com as regras após aprendizado
             episodios = self._extract_with_rules(html)
 
         return episodios

@@ -1,0 +1,22 @@
+{
+  "errors": [
+    {
+      "timestamp": "2026-01-19T17:24:01.486340",
+      "anime": "Kizuna No Allele",
+      "url": "https://goyabu.io/anime/kizuna-no-allele",
+      "stage": "retry_queue",
+      "type": "RETRY_AGENDADO",
+      "message": "Agendado para retry",
+      "fixed": false,
+      "attempts": 1
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "fixed": 0,
+    "pending": 1,
+    "by_type": {
+      "RETRY_AGENDADO": 1
+    }
+  }
+}

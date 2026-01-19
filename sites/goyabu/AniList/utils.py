@@ -29,4 +29,4 @@ def carregar_json_existente(arquivo: str):
         return {"animes": [], "processed_ids": []}
 
 def transformar_em_objeto(anime_obj: Anime):
-    return anime_obj  # agora só retorna o objeto, conversão é feita ao salvar
+    return anime_obj  # agora sÃ³ retorna o objeto, conversÃ£o Ã© feita ao salvar

@@ -1,0 +1,10 @@
+============================================================
+TIPO: RETRY_AGENDADO
+ANIME: Kizuna No Allele
+URL: https://goyabu.io/anime/kizuna-no-allele
+ERRO: IA_FALHA: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+TIMESTAMP: 2026-01-19 14:24:01
+
+[2026-01-19T17:24:01.486340] RETRY_AGENDADO | Kizuna No Allele | retry_queue
+Agendado para retry
+

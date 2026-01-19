@@ -16,7 +16,7 @@ from sites.goyabu.AniList.anilist_api import (
     buscar_detalhes_anime
 )
 
-# 🔹 Logger self-healing
+# ð¹ Logger self-healing
 from core.error_logger import log_error
 
 # --------------------------------------------------
@@ -34,7 +34,7 @@ ERROS_DIR.mkdir(parents=True, exist_ok=True)
 ERROS_FILE = ERROS_DIR / "Erros.txt"
 
 # --------------------------------------------------
-# LOG DE ERROS (LEGADO – NÃO REMOVIDO)
+# LOG DE ERROS (LEGADO â NÃO REMOVIDO)
 # --------------------------------------------------
 def registrar_erro(tipo, anime=None, url=None, erro=None, extra=None):
     with open(ERROS_FILE, "a", encoding="utf-8") as f:
@@ -51,7 +51,7 @@ def registrar_erro(tipo, anime=None, url=None, erro=None, extra=None):
         f.write(f"TIMESTAMP: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
 # --------------------------------------------------
-# FUNÇÃO AUXILIAR PARA JSON
+# FUNÃÃO AUXILIAR PARA JSON
 # --------------------------------------------------
 def to_dict(obj):
     if obj is None:
@@ -66,11 +66,11 @@ def to_dict(obj):
         return str(obj)
 
 # --------------------------------------------------
-# NORMALIZAÇÃO DE TÍTULOS
+# NORMALIZAÃÃO DE TÃTULOS
 # --------------------------------------------------
 def normalizar_titulo(titulo):
     import unicodedata
-    t = titulo.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+    t = titulo.replace('â', '"').replace('â', '"').replace('â', "'").replace('â', "'")
     t = re.sub(r'\(.*?\)', '', t)
     t = t.split(":")[0]
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
@@ -114,11 +114,11 @@ def buscar_anime_por_url_ou_fuzzy(titulo, url=None):
     registrar_erro("ANIME_NAO_ENCONTRADO", titulo, url)
     log_error(anime=titulo, url=url, stage="anilist",
               error_type="ANIME_NAO_ENCONTRADO",
-              message="Anime não encontrado no AniList")
+              message="Anime nÃ£o encontrado no AniList")
     return None
 
 # --------------------------------------------------
-# FUNÇÃO PRINCIPAL
+# FUNÃÃO PRINCIPAL
 # --------------------------------------------------
 def main(max_pages=None, delay=1.5):
     anime_list_scraper = GoyabuAnimeListScraper()
@@ -132,7 +132,7 @@ def main(max_pages=None, delay=1.5):
     fila_retry = []
     pagina = 1
 
-    print("🚀 Iniciando scraper híbrido Goyabu + AniList")
+    print("🚀 Iniciando scraper hibrido Goyabu + AniList")
 
     while True:
         if max_pages and pagina > max_pages:
@@ -152,7 +152,7 @@ def main(max_pages=None, delay=1.5):
             try:
                 episodios = anime_page_scraper.listar_episodios(anime["link"])
                 if not episodios:
-                    raise Exception("Sem episódios")
+                    raise Exception("Sem episÃ³dios")
 
                 for ep in episodios:
                     streams = episode_page_scraper.obter_streams(ep["link"])
@@ -179,10 +179,10 @@ def main(max_pages=None, delay=1.5):
         pagina += 1
 
     # --------------------------------------------------
-    # 🔁 RETRY INTELIGENTE (ERRO 5)
+    # ð RETRY INTELIGENTE (ERRO 5)
     # --------------------------------------------------
     if fila_retry:
-        print(f"\n🔁 Retry inteligente: {len(fila_retry)} animes")
+        print(f"\nð Retry inteligente: {len(fila_retry)} animes")
         for anime in fila_retry:
             try:
                 episodios = anime_page_scraper.listar_episodios(anime["link"])
@@ -217,7 +217,7 @@ def main(max_pages=None, delay=1.5):
                 registrar_erro("RETRY_FALHOU", anime["titulo"], anime["link"], str(e))
 
     salvar_final(resultado_final)
-    print("\n✅ Scraping finalizado com retry inteligente")
+    print("\nâ Scraping finalizado com retry inteligente")
 
 # --------------------------------------------------
 # SALVAMENTO

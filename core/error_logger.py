@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # core/error_logger.py
 import json
 from pathlib import Path
@@ -17,16 +18,31 @@ DASHBOARD = BASE_DIR / "dashboard.json"
 # HELPERS
 # --------------------------------------------------
 def _now() -> str:
+    """Retorna timestamp UTC ISO"""
     return datetime.utcnow().isoformat()
 
 
 def _load_dashboard() -> Dict[str, Any]:
+    """Carrega dashboard JSON com fallback seguro"""
     if DASHBOARD.exists():
         try:
-            return json.loads(DASHBOARD.read_text(encoding="utf-8"))
+            data = json.loads(DASHBOARD.read_text(encoding="utf-8"))
+            if "errors" not in data or "stats" not in data:
+                # Corrige dashboard inválido
+                data = {
+                    "errors": [],
+                    "stats": {
+                        "total": 0,
+                        "fixed": 0,
+                        "pending": 0,
+                        "by_type": {}
+                    }
+                }
+            return data
         except Exception:
             pass
 
+    # Cria dashboard inicial se não existir ou estiver corrompido
     return {
         "errors": [],
         "stats": {
@@ -39,6 +55,7 @@ def _load_dashboard() -> Dict[str, Any]:
 
 
 def _save_dashboard(data: Dict[str, Any]):
+    """Salva dashboard JSON"""
     DASHBOARD.write_text(
         json.dumps(data, indent=2, ensure_ascii=False),
         encoding="utf-8"
@@ -55,6 +72,10 @@ def log_error(
     error_type: str,
     message: str
 ) -> Dict[str, Any]:
+    """
+    Log humano + dashboard de erros (JSON self-healing)
+    Retorna dict do erro
+    """
 
     error = {
         "timestamp": _now(),
@@ -75,7 +96,16 @@ def log_error(
             f"{message}\n\n"
         )
 
+    # Log JSON (dashboard)
     dashboard = _load_dashboard()
+    dashboard.setdefault("errors", [])
+    dashboard.setdefault("stats", {
+        "total": 0,
+        "fixed": 0,
+        "pending": 0,
+        "by_type": {}
+    })
+
     dashboard["errors"].append(error)
 
     # Estatísticas

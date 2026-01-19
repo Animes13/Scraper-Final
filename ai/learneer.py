@@ -38,21 +38,17 @@ class RuleLearner:
         """
 
         if not context.get("html"):
-<<<<<<< HEAD
-            raise RuntimeError("HTML vazio ‚Äî IA no ser√° chamada")
-=======
-            raise RuntimeError("HTML vazio - IA no ser√° chamada")
->>>>>>> 825349a (Primeiro commit do scraper)
+            raise RuntimeError("HTML vazio ó IA no ser· chamada")
 
         # 1 chama Gemini
         result = self.gemini.analyze(context)
 
-        # 2 valida estrutura m√≠nima
+        # 2 valida estrutura mÌnima
         if not self._basic_validation(result):
-            raise RuntimeError("Resposta da IA inv√°lida")
+            raise RuntimeError("Resposta da IA inv·lida")
 
         if result["confidence"] < MIN_CONFIDENCE:
-            raise RuntimeError("Confian√ßa da IA muito baixa")
+            raise RuntimeError("ConfianÁa da IA muito baixa")
 
         # 3 normaliza
         rule = self._normalize_rule(result, context["stage"])
@@ -61,9 +57,9 @@ class RuleLearner:
 
         # 4 valida regra
         if not self.validator.validate(rule, context["stage"]):
-            raise RuntimeError("Regra inv√°lida segundo Validator")
+            raise RuntimeError("Regra inv·lida segundo Validator")
 
-        # 5 evita duplica√ßo
+        # 5 evita duplicaÁo
         if self._rule_exists(rule, context["stage"]):
             return {"status": "exists"}
 
@@ -76,7 +72,7 @@ class RuleLearner:
         }
 
     # --------------------------------------------------
-    # VALIDA√áO B√ÅSICA DO JSON
+    # VALIDA«O B¡SICA DO JSON
     # --------------------------------------------------
     def _basic_validation(self, data: Dict[str, Any]) -> bool:
         return (
@@ -142,7 +138,7 @@ class RuleLearner:
         return rule
 
     # --------------------------------------------------
-    # DUPLICA√áO
+    # DUPLICA«O
     # --------------------------------------------------
     def _rule_exists(self, rule: Dict[str, Any], stage: str) -> bool:
         rules = self.loader.get_rules(stage)

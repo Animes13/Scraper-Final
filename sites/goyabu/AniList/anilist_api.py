@@ -13,7 +13,7 @@ ANILIST_URL = "https://graphql.anilist.co"
 # POST GRAPHQL COM RETRY
 # -------------------------
 def _post_graphql(query, variables, retries=10, delay=2, max_delay=64):
-    """Wrapper para requisições GraphQL com retry e backoff exponencial"""
+    """Wrapper para requisiÃ§Ãµes GraphQL com retry e backoff exponencial"""
     attempt = 0
     while attempt < retries:
         try:
@@ -37,36 +37,36 @@ def _post_graphql(query, variables, retries=10, delay=2, max_delay=64):
             print(f"[Retry {attempt+1}/{retries}] Erro de rede: {e}, aguardando {wait}s...")
             time.sleep(wait)
             attempt += 1
-    print(f"Falha após {retries} tentativas para variáveis {variables}")
+    print(f"Falha apÃ³s {retries} tentativas para variÃ¡veis {variables}")
     return None
     
 # ------------------------------------------------------------------
-# Função melhorada para busca de títulos disponíveis (fuzzy / parcial)
+# FunÃ§Ã£o melhorada para busca de tÃ­tulos disponÃ­veis (fuzzy / parcial)
 # ------------------------------------------------------------------
 
 def buscar_titulos_disponiveis(query):
     """
-    Retorna uma lista de títulos disponíveis que correspondem à query.
+    Retorna uma lista de tÃ­tulos disponÃ­veis que correspondem Ã  query.
     - Inclui busca exata
-    - Inclui versão parcial (primeiros 20 caracteres)
+    - Inclui versÃ£o parcial (primeiros 20 caracteres)
     - Normaliza caracteres especiais
     """
     titulos = []
 
-    # 1️⃣ Título original
+    # 1ï¸â£ TÃ­tulo original
     titulos.append(query)
 
-    # 2️⃣ Título parcial (primeiros 20 caracteres)
+    # 2ï¸â£ TÃ­tulo parcial (primeiros 20 caracteres)
     if len(query) > 20:
         titulos.append(query[:20])
 
-    # 3️⃣ Normalização: remove acentos e aspas especiais
+    # 3ï¸â£ NormalizaÃ§Ã£o: remove acentos e aspas especiais
     def normalizar(texto):
         # Substitui aspas curvas e outros caracteres estranhos
-        texto = texto.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+        texto = texto.replace('â', '"').replace('â', '"').replace('â', "'").replace('â', "'")
         # Remove acentos
         texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
-        # Remove espaços duplicados
+        # Remove espaÃ§os duplicados
         texto = re.sub(r'\s+', ' ', texto).strip()
         return texto
 
@@ -198,10 +198,10 @@ def buscar_detalhes_anime(id_anime: int):
 
 
 # -------------------------
-# BUSCA POR TÍTULO COM FALLBACK
+# BUSCA POR TÃTULO COM FALLBACK
 # -------------------------
 def buscar_detalhes_anime_por_titulo(titulo: str):
-    """Busca anime pelo título, faz segunda tentativa com primeiros 20 caracteres se falhar"""
+    """Busca anime pelo tÃ­tulo, faz segunda tentativa com primeiros 20 caracteres se falhar"""
     query = '''
     query ($search: String) {
       Media(search: $search, type: ANIME) {
@@ -230,18 +230,18 @@ def buscar_detalhes_anime_por_titulo(titulo: str):
       }
     }'''
 
-    # 1ª tentativa: título completo
+    # 1Âª tentativa: tÃ­tulo completo
     variables = {"search": titulo}
     data = _post_graphql(query, variables)
 
-    # 2ª tentativa: primeiros 20 caracteres se falhar
+    # 2Âª tentativa: primeiros 20 caracteres se falhar
     if not data or "Media" not in data:
         curto = titulo[:20]
-        print(f"⚠️ 1ª tentativa falhou para '{titulo}', tentando com '{curto}'...")
+        print(f"â ï¸ 1Âª tentativa falhou para '{titulo}', tentando com '{curto}'...")
         variables = {"search": curto}
         data = _post_graphql(query, variables)
         if not data or "Media" not in data:
-            print(f"❌ Nenhum resultado para '{titulo}'")
+            print(f"â Nenhum resultado para '{titulo}'")
             return None
 
     return construir_anime_obj(data["Media"])

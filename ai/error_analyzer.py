@@ -45,7 +45,7 @@ class ErrorAnalyzerAI:
     # --------------------------------------------------
     def build_context(self, error: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Prepara contexto limpo e mínimo para IA.
+        Prepara contexto limpo e mÃ­nimo para IA.
         """
         return {
             "anime": error.get("anime"),

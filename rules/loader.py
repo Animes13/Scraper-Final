@@ -19,7 +19,7 @@ class RuleLoader:
 
         path = self._path(filename)
         if not os.path.exists(path):
-            raise FileNotFoundError(f"Rule file não encontrado: {filename}")
+            raise FileNotFoundError(f"Rule file nÃ£o encontrado: {filename}")
 
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)

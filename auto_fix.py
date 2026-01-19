@@ -70,23 +70,23 @@ class AutoFixEngine:
     # --------------------------------------------------
     def run(self):
         if not DASHBOARD.exists():
-            print("✅ Nenhum erro registrado")
+            print("â Nenhum erro registrado")
             return
 
         dashboard = load_dashboard()
         self.analyzer.load_errors()
 
         if not self.analyzer.errors:
-            print("✅ Nenhum erro pendente elegível")
+            print("â Nenhum erro pendente elegÃ­vel")
             return
 
-        print(f"🧠 AutoFix iniciado — {len(self.analyzer.errors)} erros analisáveis")
+        print(f"ð§  AutoFix iniciado â {len(self.analyzer.errors)} erros analisÃ¡veis")
 
         for error in self.analyzer.errors:
             self._process_error(error, dashboard)
 
         save_dashboard(dashboard)
-        print("✅ AutoFix finalizado")
+        print("â AutoFix finalizado")
 
     # --------------------------------------------------
     # PROCESSAMENTO DE ERRO
@@ -94,7 +94,7 @@ class AutoFixEngine:
     def _process_error(self, error: Dict[str, Any], dashboard: Dict[str, Any]):
         action = handle_error(error)
 
-        print(f"\n🔧 {error['type']} → ação: {action.value}")
+        print(f"\nð§ {error['type']} â aÃ§Ã£o: {action.value}")
 
         if action == Action.IGNORE:
             return
@@ -120,7 +120,7 @@ class AutoFixEngine:
     # RETRY SIMPLES
     # --------------------------------------------------
     def _retry_simple(self, error: Dict[str, Any], dashboard: Dict[str, Any]):
-        print(f"🔁 Retry simples → {error['url']}")
+        print(f"ð Retry simples â {error['url']}")
         self._inc_attempts(error, dashboard)
         time.sleep(RETRY_DELAY)
 
@@ -129,7 +129,7 @@ class AutoFixEngine:
     # --------------------------------------------------
     def _call_ia_and_retry(self, error: Dict[str, Any], dashboard: Dict[str, Any]):
         try:
-            print("🧠 Chamando IA para aprendizado…")
+            print("ð§  Chamando IA para aprendizadoâ¦")
 
             context = self.analyzer.build_context(error)
             result = self.learner.learn(context)
@@ -137,17 +137,17 @@ class AutoFixEngine:
             if result.get("status") not in ("learned", "exists"):
                 return
 
-            print("🧠 Regra aprendida — aguardando retry do scraper")
+            print("ð§  Regra aprendida â aguardando retry do scraper")
             self._inc_attempts(error, dashboard)
 
-            # Marca para próximo ciclo do scraper
+            # Marca para prÃ³ximo ciclo do scraper
             for e in dashboard["errors"]:
                 if e["url"] == error["url"] and not e["fixed"]:
                     e["pending_retry"] = True
                     break
 
         except Exception as e:
-            print(f"❌ IA falhou: {e}")
+            print(f"â IA falhou: {e}")
             self._inc_attempts(error, dashboard)
 
 

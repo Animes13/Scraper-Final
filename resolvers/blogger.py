@@ -19,12 +19,12 @@ class BloggerResolver(BaseResolver):
     def resolve(self, url):
         html = self.fetcher.get(url)
 
-        # 1️⃣ tenta extrair play_url do script
+        # 1ï¸â£ tenta extrair play_url do script
         sources = self._extract_sources_from_scripts(html)
         if sources:
             return sources
 
-        # 2️⃣ fallback: iframe
+        # 2ï¸â£ fallback: iframe
         soup = BeautifulSoup(html, "html.parser")
         iframe = soup.find("iframe")
         if iframe and iframe.get("src"):
@@ -44,7 +44,7 @@ class BloggerResolver(BaseResolver):
     def _extract_sources_from_scripts(self, html):
         streams = []
 
-        # Novo padrão do Blogger: "play_url" em vez de "url"
+        # Novo padrÃ£o do Blogger: "play_url" em vez de "url"
         matches = re.findall(
             r'"play_url":"(https://[^"]+googlevideo\.com[^"]+)"',
             html
