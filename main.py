@@ -2,6 +2,7 @@
 # scraper/main.py
 import json
 import time
+import re
 from pathlib import Path
 from difflib import get_close_matches
 from deep_translator import GoogleTranslator
@@ -9,7 +10,11 @@ from deep_translator import GoogleTranslator
 from sites.goyabu.anime_list import GoyabuAnimeListScraper
 from sites.goyabu.anime_page import GoyabuAnimePageScraper
 from sites.goyabu.episode_page import GoyabuEpisodePageScraper
-from sites.goyabu.AniList.anilist_api import buscar_detalhes_anime_por_titulo, buscar_titulos_disponiveis
+from sites.goyabu.AniList.anilist_api import (
+    buscar_detalhes_anime_por_titulo,
+    buscar_titulos_disponiveis,
+    buscar_detalhes_anime
+)
 
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -26,29 +31,59 @@ def to_dict(obj):
     elif isinstance(obj, list):
         return [to_dict(item) for item in obj]
     elif hasattr(obj, "__dict__"):
-        result = {}
-        for key, value in obj.__dict__.items():
-            result[key] = to_dict(value)
-        return result
+        return {k: to_dict(v) for k, v in obj.__dict__.items()}
     else:
         return str(obj)
 
 # --------------------------------------------------
-# FUNÇÃO DE BUSCA FUZZY NO AniList
+# NORMALIZAÇÃO DE TÍTULOS
 # --------------------------------------------------
-def buscar_anime_fuzzy(titulo):
-    """
-    Tenta encontrar um anime no AniList usando busca fuzzy.
-    """
-    # Lista de títulos disponíveis (romaji/english/native)
-    possiveis = buscar_titulos_disponiveis(titulo[:50])  # Busca inicial de possíveis matches
-    if not possiveis:
-        return None
+def normalizar_titulo(titulo):
+    """Remove acentos, aspas curvas, parênteses e espaços duplicados"""
+    import unicodedata
+    t = titulo.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+    t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')
+    t = re.sub(r'\s+', ' ', t).strip()
+    return t
 
-    # Seleciona o mais parecido
-    match = get_close_matches(titulo, possiveis, n=1, cutoff=0.6)  # 60% de similaridade mínima
-    if match:
-        return buscar_detalhes_anime_por_titulo(match[0])
+# --------------------------------------------------
+# FUNÇÃO DE BUSCA FUZZY COM FALLBACK POR URL/ID
+# --------------------------------------------------
+def buscar_anime_por_url_ou_fuzzy(titulo, url=None):
+    """
+    Busca primeiro pelo título usando fuzzy.
+    Se falhar, tenta extrair o ID do AniList da URL (se fornecida) e busca por ID.
+    """
+    titulo_norm = normalizar_titulo(titulo)
+    possiveis = buscar_titulos_disponiveis(titulo_norm[:50])
+    if possiveis:
+        match = get_close_matches(titulo_norm, possiveis, n=1, cutoff=0.6)
+        if match:
+            ani_data = buscar_detalhes_anime_por_titulo(match[0])
+            if ani_data:
+                return ani_data
+
+    # Fallback parcial (primeiros 20 caracteres)
+    if len(titulo_norm) > 20:
+        possiveis = buscar_titulos_disponiveis(titulo_norm[:20])
+        if possiveis:
+            match = get_close_matches(titulo_norm[:20], possiveis, n=1, cutoff=0.5)
+            if match:
+                ani_data = buscar_detalhes_anime_por_titulo(match[0])
+                if ani_data:
+                    return ani_data
+
+    # Fallback por ID do AniList extraído da URL
+    if url:
+        m = re.search(r'/anime/(\d+)', url)
+        if m:
+            id_anime = int(m.group(1))
+            print(f"🔄 Título '{titulo}' não encontrado, tentando pelo AniList ID {id_anime}")
+            ani_data = buscar_detalhes_anime(id_anime)
+            if ani_data:
+                return ani_data
+
+    print(f"❌ Nenhum resultado para '{titulo}'")
     return None
 
 # --------------------------------------------------
@@ -65,7 +100,6 @@ def main(max_pages=1, delay=1.5):
 
     for pagina in range(1, max_pages + 1):
         print(f"\n📄 Página {pagina}")
-
         try:
             animes = anime_list_scraper.listar(pagina)
         except Exception as e:
@@ -75,13 +109,7 @@ def main(max_pages=1, delay=1.5):
         for anime in animes:
             print(f"\n🎬 Anime: {anime['titulo']}")
 
-            # Busca AniList usando fuzzy search
-            ani_data = buscar_anime_fuzzy(anime["titulo"])
-            if not ani_data:
-                # Segunda tentativa com primeiros 20 caracteres
-                titulo_parcial = anime["titulo"][:20]
-                print(f"🔄 AniList não encontrou '{anime['titulo']}', tentando parcial fuzzy: '{titulo_parcial}'")
-                ani_data = buscar_anime_fuzzy(titulo_parcial)
+            ani_data = buscar_anime_por_url_ou_fuzzy(anime["titulo"], anime.get("anilist_url"))
 
             # Preenche objeto base do Goyabu
             anime_obj = {
@@ -139,12 +167,10 @@ def main(max_pages=1, delay=1.5):
 
             for ep in episodios:
                 print(f"   ▸ EP {ep['numero']}")
-
                 ep_url = ep.get("link")
                 if not ep_url:
                     print("   ⚠️ Episódio sem link, pulando")
                     continue
-
                 try:
                     streams = episode_page_scraper.obter_streams(ep_url)
                 except Exception as e:
@@ -156,7 +182,6 @@ def main(max_pages=1, delay=1.5):
                     "url": ep_url,
                     "streams": streams
                 })
-
                 time.sleep(delay)
 
             resultado_final.append(anime_obj)
