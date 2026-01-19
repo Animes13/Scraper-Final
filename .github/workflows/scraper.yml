@@ -28,18 +28,27 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           pip install googletrans==4.0.0-rc1 requests beautifulsoup4 deep-translator google-genai
 
-      # 4️⃣ Roda o scraper
+      # 4️⃣ Garante que a pasta e arquivo existam
+      - name: Prepare output
+        run: |
+          mkdir -p scraper/output
+          touch scraper/output/animes.json
+
+      # 5️⃣ Roda o scraper
       - name: Run scraper
         run: |
           python main.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # chave da Gemini
 
-      # 5️⃣ Commit e push do JSON gerado
+      # 6️⃣ Commit e push do JSON gerado
       - name: Commit output
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add scraper/output/animes.json
-          git commit -m "Atualizar scraper output [skip ci]" || echo "Sem alterações para commit"
-          git push
+          if [ -f scraper/output/animes.json ]; then
+            git config --global user.name "github-actions"
+            git config --global user.email "actions@github.com"
+            git add scraper/output/animes.json
+            git commit -m "Atualizar scraper output [skip ci]" || echo "Sem alterações para commit"
+            git push
+          else
+            echo "Arquivo scraper/output/animes.json não existe, pulando commit"

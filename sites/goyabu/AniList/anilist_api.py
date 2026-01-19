@@ -2,6 +2,8 @@
 # anilist_api.py
 import time
 import requests
+import re
+import unicodedata
 from sites.goyabu.AniList.models import Anime, Title, Staff, Character, VoiceActor, Relation, Trailer
 
 ANILIST_URL = "https://graphql.anilist.co"
@@ -37,6 +39,46 @@ def _post_graphql(query, variables, retries=10, delay=2, max_delay=64):
             attempt += 1
     print(f"Falha após {retries} tentativas para variáveis {variables}")
     return None
+    
+# ------------------------------------------------------------------
+# Função melhorada para busca de títulos disponíveis (fuzzy / parcial)
+# ------------------------------------------------------------------
+
+def buscar_titulos_disponiveis(query):
+    """
+    Retorna uma lista de títulos disponíveis que correspondem à query.
+    - Inclui busca exata
+    - Inclui versão parcial (primeiros 20 caracteres)
+    - Normaliza caracteres especiais
+    """
+    titulos = []
+
+    # 1️⃣ Título original
+    titulos.append(query)
+
+    # 2️⃣ Título parcial (primeiros 20 caracteres)
+    if len(query) > 20:
+        titulos.append(query[:20])
+
+    # 3️⃣ Normalização: remove acentos e aspas especiais
+    def normalizar(texto):
+        # Substitui aspas curvas e outros caracteres estranhos
+        texto = texto.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+        # Remove acentos
+        texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
+        # Remove espaços duplicados
+        texto = re.sub(r'\s+', ' ', texto).strip()
+        return texto
+
+    titulos_normalizados = [normalizar(t) for t in titulos]
+
+    # Remove duplicatas mantendo ordem
+    titulos_final = []
+    for t in titulos_normalizados:
+        if t not in titulos_final:
+            titulos_final.append(t)
+
+    return titulos_final    
 
 
 # -------------------------
