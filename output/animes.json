@@ -44,7 +44,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 59,
-    "popularity": 6896,
+    "popularity": 7019,
     "favourites": 75,
     "studios": [
       "KADOKAWA",
@@ -384,7 +384,7 @@
   {
     "nome": "Ao no Miburo 2",
     "tipo": "Legendado",
-    "nota": "0.0",
+    "nota": "5.0",
     "url": "https://goyabu.io/anime/ao-no-miburo-2",
     "episodios": [
       {
@@ -442,7 +442,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 58,
-    "popularity": 2378,
+    "popularity": 2394,
     "favourites": 29,
     "studios": [
       "Maho Film",
@@ -704,7 +704,7 @@
   {
     "nome": "Sousou no Frieren 2",
     "tipo": "Legendado",
-    "nota": "4.7",
+    "nota": "4.8",
     "url": "https://goyabu.io/anime/sousou-no-frieren-2",
     "episodios": [
       {
@@ -734,7 +734,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 89,
-    "popularity": 112497,
+    "popularity": 115059,
     "favourites": 2239,
     "studios": [
       "Toho",
@@ -1107,7 +1107,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 64,
-    "popularity": 7957,
+    "popularity": 8036,
     "favourites": 93,
     "studios": [
       "Ascension",
@@ -1378,8 +1378,8 @@
       "english": "",
       "native": ""
     },
-    "descricoes": "The second season of <i>Vigilante: Boku no Hero Academia ILLEGALS</i>.",
-    "descricoes_pt": "A segunda temporada de <i>Vigilante: Boku no Hero Academia ILLEGALS</i>.",
+    "descricoes": "Kouichi Haimawari is a dull college student who aspires to be a hero but has given up on his dream. Although 80% of the world’s population has superhuman powers called Quirks, few are chosen to become heroes and protect people. Everything changes for Kouichi when he and Pop☆Step are saved by the vigilante Knuckleduster and get recruited to become vigilantes themselves!\n<br><br>\n(Source: Crunchyroll) ",
+    "descricoes_pt": "Kouichi Haimawari é um estudante universitário chato que aspira ser um herói, mas desistiu de seu sonho. Embora 80% da população mundial possua poderes sobre-humanos chamados Quirks, poucos são escolhidos para se tornarem heróis e protegerem as pessoas. Tudo muda para Kouichi quando ele e Pop☆Step são salvos pelo vigilante Knuckleduster e recrutados para se tornarem vigilantes!\n<br><br>\n(Fonte: Crunchyroll)",
     "generos": [
       "Action",
       "Adventure",
@@ -1388,10 +1388,10 @@
     ],
     "episodes_total": 13,
     "duration": 24,
-    "status": "RELEASING",
-    "averageScore": 72,
-    "popularity": 23666,
-    "favourites": 196,
+    "status": "FINISHED",
+    "averageScore": 76,
+    "popularity": 57558,
+    "favourites": 1077,
     "studios": [
       "bones film",
       "Toho",
@@ -1405,13 +1405,13 @@
     "staff": [
       {
         "name": "Yousuke Kuroda",
-        "role": "Script (eps 1, 2)",
+        "role": "Series Composition",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n97471-QakOe67tAErz.png"
       },
       {
         "name": "Yousuke Kuroda",
-        "role": "Series Composition",
+        "role": "Script (eps 1-13)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n97471-QakOe67tAErz.png"
       },
@@ -1428,6 +1428,18 @@
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n99980-4xS4V6qrH3Ab.png"
       },
       {
+        "name": "Masahiko Minami",
+        "role": "Production",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101519-THVBejDRSLaO.png"
+      },
+      {
+        "name": "Takahiko Yoshida",
+        "role": "Animation Director (OP, eps 1, 12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101886-6kxFZNHuObgl.jpg"
+      },
+      {
         "name": "Takahiko Yoshida",
         "role": "Character Design",
         "language": "JAPANESE",
@@ -1435,15 +1447,27 @@
       },
       {
         "name": "Takahiko Yoshida",
-        "role": "Chief Animation Director (eps 1, 2)",
+        "role": "Chief Animation Director (eps 2-13)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101886-6kxFZNHuObgl.jpg"
+      },
+      {
+        "name": "Takahiko Yoshida",
+        "role": "Key Animation (ep 1)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101886-6kxFZNHuObgl.jpg"
       },
       {
         "name": "Naoyuki Konno",
-        "role": "Key Animation (ep 2)",
+        "role": "Key Animation (eps 5, 8, 13)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8099.jpg"
+      },
+      {
+        "name": "Toshihiro Kawamoto",
+        "role": "Animation Director (eps 4, 7)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103531-vNFYQvYyUFs8.png"
       },
       {
         "name": "Tatsuya Minami",
@@ -1458,22 +1482,40 @@
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8970.jpg"
       },
       {
+        "name": "Zachary Bolton",
+        "role": "ADR Director (English)",
+        "language": "ENGLISH",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8970.jpg"
+      },
+      {
         "name": "Hironori Tanaka",
-        "role": "Episode Director (OP)",
+        "role": "Key Animation (ep 4)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103979-iNgo68ikjKgx.jpg"
       },
       {
-        "name": "Hironori Tanaka",
-        "role": "Key Animation (OP)",
+        "name": "Norimitsu Suzuki",
+        "role": "Key Animation (eps 6, 11)",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103979-iNgo68ikjKgx.jpg"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104133-xOMTC73YUUyv.png"
       },
       {
-        "name": "Hironori Tanaka",
-        "role": "Storyboard (OP)",
+        "name": "Kouji Hirano",
+        "role": "Color Coordination (ep 12)",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103979-iNgo68ikjKgx.jpg"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Kouji Hirano",
+        "role": "Finishing Check (ep 12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Kyouko Kotani",
+        "role": "Key Animation (eps 1, 7)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104501-Sz48bLMTTlhw.jpg"
       },
       {
         "name": "Kouhei Horikoshi",
@@ -1482,79 +1524,99 @@
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104834-Bny7KyukbSdy.png"
       },
       {
+        "name": "Takako Uemura",
+        "role": "Finishing (ep 6)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105124-lvTv1GHhrCLG.jpg"
+      },
+      {
+        "name": "Takeshi Satou",
+        "role": "Background Art (ep 8)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
         "name": "Michio Fukuda",
-        "role": "Storyboard (ep 1)",
+        "role": "Storyboard (ep 6)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105428-f4N2dkIvoM7d.png"
       },
       {
         "name": "Atsushi Hasebe",
-        "role": "Sub Character Design (ep 1)",
+        "role": "Key Animation (ep 9)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105928-bj3koOL3uhKB.png"
       },
       {
-        "name": "Tomoyuki Kitamura",
-        "role": "Animation Director (ep 1)",
+        "name": "Atsushi Hasebe",
+        "role": "Sub Character Design (eps 11-13)",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Masafumi Mima",
-        "role": "Sound Director",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111749-xD6V05u2FQig.png"
-      },
-      {
-        "name": "Tsunenori Saitou",
-        "role": "Animation Director (ep 2)",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n112295-4QeldP4iNqZx.png"
-      },
-      {
-        "name": "Hideyuki Furuhashi",
-        "role": "Original Story",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n113837-2o4nt5W5JDfG.png"
-      },
-      {
-        "name": "Kenichi Suzuki",
-        "role": "Assistant Episode Director (OP)",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119341-rDiaRaVrQVyJ.png"
-      },
-      {
-        "name": "Kenichi Suzuki",
-        "role": "Director",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119341-rDiaRaVrQVyJ.png"
-      },
-      {
-        "name": "Yukihiro Watanabe",
-        "role": "Art Board (eps 1, 2)",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Yukihiro Watanabe",
-        "role": "Background Art (OP)",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Yukihiro Watanabe",
-        "role": "Art Director",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Ayana Nishino",
-        "role": "Sub Character Design (ep 1)",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n121791-id7i1d621XkI.png"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105928-bj3koOL3uhKB.png"
       }
     ],
     "characters": [
+      {
+        "name": "Narrator",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg",
+        "voiceActors": [
+          {
+            "name": "Hiroyuki Yoshino",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95283-g76zV4YacFfm.jpg"
+          },
+          {
+            "name": "Dado Monteiro",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/14489.jpg"
+          },
+          {
+            "name": "Óscar Flores",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n189454-PJYePcOETBIb.jpg"
+          },
+          {
+            "name": "Maxwell Powers",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n135407-FwvV6fkEdGx1.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Izuku Midoriya",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
+        "voiceActors": [
+          {
+            "name": "Daiki Yamashita",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n116971-KDHjlYPO4HrS.png"
+          },
+          {
+            "name": "Lipe Volpato",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n175195-vIv8LgrkG8fd.png"
+          },
+          {
+            "name": "Justin Briner",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/119611-CwI54lOhSnDQ.jpg"
+          },
+          {
+            "name": "Sebastián Reggio",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n197833-hKByNIlG8sxI.png"
+          },
+          {
+            "name": "Simone Lupinacci",
+            "language": "ITALIAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n167596-xNNQ9uP2qmlg.png"
+          }
+        ]
+      },
+      {
+        "name": "Tenya Iida",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89222-TL8MQM3wJgEB.png",
+        "voiceActors": []
+      },
       {
         "name": "Toshinori Yagi",
         "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
@@ -1563,6 +1625,31 @@
             "name": "Kenta Miyake",
             "language": "JAPANESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95720-enxx6kZKuwGi.jpg"
+          },
+          {
+            "name": "Nestor Chiesse",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104157-v5oY4K5wV85F.jpg"
+          },
+          {
+            "name": "Christopher Sabat",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95253-Z7Yqog73M7E8.png"
+          },
+          {
+            "name": "Orlando Noguera",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n198898-72Ck53JPL4eu.png"
+          },
+          {
+            "name": "Matti Klemm",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n141778-FqDNQTPrNTVo.jpg"
+          },
+          {
+            "name": "Lorenzo Scattorin",
+            "language": "ITALIAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96239-P3XLQtzk2cGc.png"
           }
         ]
       },
@@ -1576,14 +1663,56 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95095-DvSjTQnqcgXP.png"
           },
           {
+            "name": "César Marchetti",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n154552-Q4131HeYuUYB.jpg"
+          },
+          {
             "name": "Christopher Wehkamp",
             "language": "ENGLISH",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n117629-w22t54KeomD3.jpg"
           },
           {
-            "name": "César Marchetti",
+            "name": "Ernesto Rumbaut",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n198893-KD4qfaGLOZOE.png"
+          }
+        ]
+      },
+      {
+        "name": "All For One",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/125956-jzhb8Z4peLb8.jpg",
+        "voiceActors": [
+          {
+            "name": "Akio Ootsuka",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95146-T6IEmqXW3xUN.jpg"
+          },
+          {
+            "name": "Gilberto Baroli",
             "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n154552-Q4131HeYuUYB.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102351-uEan6ihStqdz.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Chizome Akaguro",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126067-ZL6sRFyaqX9c.png",
+        "voiceActors": [
+          {
+            "name": "Gou Inoue",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95527-8eI52NWm305v.png"
+          },
+          {
+            "name": "Rodrigo Araújo",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n197825-MvYCWrk7Kybe.jpg"
+          },
+          {
+            "name": "Robert McCollum",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95666-er3JLtqV1TLy.jpg"
           }
         ]
       },
@@ -1597,14 +1726,45 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n236715-AqVwesOw9zVK.jpg"
           },
           {
+            "name": "Rony Frauches",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n277972-TVt3E8iOyEye.jpg"
+          },
+          {
             "name": "Jack Broadbent",
             "language": "ENGLISH",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n360824-SxojaaLe9G6J.png"
           },
           {
-            "name": "Rony Frauches",
+            "name": "Diego Ramora",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n266256-dNOP3FcvQtVQ.png"
+          },
+          {
+            "name": "Tobias John von Freyend",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n116411-Pmydt1RegvSM.png"
+          },
+          {
+            "name": "Lorenzo Briganti",
+            "language": "ITALIAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Enji Todoroki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126158-Wix9rh7unTDQ.png",
+        "voiceActors": [
+          {
+            "name": "Tetsu Inada",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95395-HpxLuh4ysrzJ.png"
+          },
+          {
+            "name": "César Emílio",
             "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n277972-TVt3E8iOyEye.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n191002-UoR9vzUO5Nnc.jpg"
           }
         ]
       },
@@ -1618,14 +1778,24 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95283-g76zV4YacFfm.jpg"
           },
           {
+            "name": "Dado Monteiro",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/14489.jpg"
+          },
+          {
             "name": "Dave Trosko",
             "language": "ENGLISH",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8769.jpg"
           },
           {
-            "name": "Dado Monteiro",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/14489.jpg"
+            "name": "Óscar Flores",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n189454-PJYePcOETBIb.jpg"
+          },
+          {
+            "name": "Phil Daub",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
           }
         ]
       },
@@ -1637,11 +1807,6 @@
             "name": "Akeno Watanabe",
             "language": "JAPANESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95094-nRPWBG1cVGo5.png"
-          },
-          {
-            "name": "Elizabeth Maxwell",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/120732-DiTLevCL0Q3c.jpg"
           },
           {
             "name": "Raquel Marinho",
@@ -1658,6 +1823,31 @@
             "name": "Yasuhiro Mamiya",
             "language": "JAPANESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104677-Jbb7yeij2Vkg.png"
+          },
+          {
+            "name": "Sérgio Moreno",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n185359-GQ2sbmQDhSLi.jpg"
+          },
+          {
+            "name": "Jason Marnocha",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129185-wOggUwbM74pZ.jpg"
+          },
+          {
+            "name": "Felix Kamin",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+          },
+          {
+            "name": "Andrés Gutiérrez Coto",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n108301-MdWBMH4h79NP.png"
+          },
+          {
+            "name": "Edoardo Lomazzi",
+            "language": "ITALIAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n240258-Z4jnjH3o6V6q.jpg"
           }
         ]
       },
@@ -1671,35 +1861,45 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n132768-r4FwpBpHnRtZ.png"
           },
           {
+            "name": "Raíssa Bueno",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n138517-vyQRzaibddlG.jpg"
+          },
+          {
             "name": "Macy Anne Johnson",
             "language": "ENGLISH",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n138785-8eEJxk4QsT0e.png"
           },
           {
-            "name": "Raíssa Bueno",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n138517-vyQRzaibddlG.jpg"
+            "name": "Elizabeth Infante",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n189432-Ll0v4D0jfSFA.png"
+          },
+          {
+            "name": "Francis Dichmann",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n181698-hSir5orx8Zkc.jpg"
+          },
+          {
+            "name": "Gaia Chiaro",
+            "language": "ITALIAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
           }
         ]
       },
       {
-        "name": "Taishirou Toyomitsu",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129755-SWhEgTR2pwXv.jpg",
+        "name": "Tensei Iida",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129757-9B5yHjf19FzZ.png",
         "voiceActors": [
           {
-            "name": "Kazuyuki Okitsu",
+            "name": "Masamichi Kitada",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102288-xqcBKreDyZYN.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n127684-nUaypoJBu4dO.png"
           },
           {
-            "name": "Kyle Hebert",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95336-VVMKFINwPYZ8.jpg"
-          },
-          {
-            "name": "Lucas Quelle",
+            "name": "Ricardo Sawaya",
             "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n343745-2OXDlSKvjxAA.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100139-134idEnwB2x2.jpg"
           }
         ]
       },
@@ -1713,14 +1913,35 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95911-OTi0Qqvbjphr.jpg"
           },
           {
-            "name": "Alejandro Saab",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n120666-w1w9s5Y9z6vW.png"
-          },
-          {
             "name": "Roberto Leite",
             "language": "PORTUGUESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n197826-5cCVxhd6Jvb2.jpg"
+          },
+          {
+            "name": "Alejandro Saab",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n120666-w1w9s5Y9z6vW.png"
+          }
+        ]
+      },
+      {
+        "name": "Kuin Hachisuka",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129764-fu5dw1u2ivV1.png",
+        "voiceActors": [
+          {
+            "name": "Sayaka Senbongi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119616-Dakq7gsUo2ja.png"
+          },
+          {
+            "name": "Juliana Máximo",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n309209-9aSxiLpQlj22.jpg"
+          },
+          {
+            "name": "Morgan Lauré",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/18057.jpg"
           }
         ]
       },
@@ -1734,14 +1955,14 @@
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106787-ojpoY7XEGYgc.jpg"
           },
           {
-            "name": "Molly Searcy",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129353-YyzYGmWn9Mv0.png"
-          },
-          {
             "name": "Priscila Ferreira",
             "language": "PORTUGUESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n175212-rGUXzu6SWVmi.jpg"
+          },
+          {
+            "name": "Molly Searcy",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129353-YyzYGmWn9Mv0.png"
           }
         ]
       },
@@ -1753,227 +1974,86 @@
             "name": "Toshiyuki Morikawa",
             "language": "JAPANESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95006-hoLuiZANeD3Q.png"
+          },
+          {
+            "name": "Mauro Horta",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182622-FlonRGRhLvns.jpg"
+          },
+          {
+            "name": "Sean Schemmel",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96000-2o6VuDoBKFam.png"
           }
         ]
       },
       {
-        "name": "Shinya Kamihara",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143275-wu7zyF4tUtMC.png",
+        "name": "Inko Midoriya",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136897-PGSMkwM1Nh4r.png",
         "voiceActors": [
           {
-            "name": "Kenta Kamakari",
+            "name": "Ana Maria Morais",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n198077-afKRQu4k7uLX.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Giran",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141749-s68dMtAc4u7l.jpg",
+        "voiceActors": [
+          {
+            "name": "Seirou Ogino",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95680-CDnOMRzFXTfK.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106629-TT3F7WfC3wLq.png"
+          },
+          {
+            "name": "Mauro Medeiros",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n301044-NlmLDpwqmozt.jpg"
           }
         ]
       },
       {
         "name": "Tsunagu Hakamada",
         "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143536-x5jMYB9HbATo.png",
-        "voiceActors": [
-          {
-            "name": "Hikaru Midorikawa",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95112-c275OLptkSYO.png"
-          }
-        ]
+        "voiceActors": []
+      },
+      {
+        "name": "Thirteen",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143542-nZhQB2X6w1Cl.png",
+        "voiceActors": []
       },
       {
         "name": "Number 6",
         "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148981-36Eri1DHVlO3.png",
         "voiceActors": [
           {
-            "name": "Taku Yashiro",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119833-6CySrXDVAZ2X.jpg"
+            "name": "Aaron Campbell",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n138441-AUeCgOsrf1oa.png"
           },
           {
             "name": "Teco Cheganças",
             "language": "PORTUGUESE",
             "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n261578-6ov8IQPIoVXf.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Oboro Shirakumo",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148982-ZJFhlJl9somG.png",
-        "voiceActors": [
+          },
           {
-            "name": "Kenshou Ono",
+            "name": "Taku Yashiro",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95819-O4fosAY0a1Ml.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119833-6CySrXDVAZ2X.jpg"
           }
         ]
       },
       {
-        "name": "Monika Kaniyashiki",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148983-StlVrPUbblfI.jpg",
-        "voiceActors": [
-          {
-            "name": "Kana Ueda",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95116-NvhEn6vNMiAq.png"
-          },
-          {
-            "name": "Kayla Temshiv",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n369596-o4dB3C9L8Pja.jpg"
-          },
-          {
-            "name": "Manuela Origuella",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n262307-rhRiqxTo0SLJ.jpg"
-          }
-        ]
+        "name": "Desutegoro",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b149187-KovqtsbG8ffN.png",
+        "voiceActors": []
       },
       {
-        "name": "Ichiro Hotta",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148984-MtUmYhM5YZH7.png",
-        "voiceActors": [
-          {
-            "name": "Spencer Liles",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n282962-PmoBt3gaKG3a.jpg"
-          },
-          {
-            "name": "Jun Miyamoto",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/125492-ao9cGc59i1v3.jpg"
-          },
-          {
-            "name": "JV Fiori",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n310548-1kwN0Ezvfxma.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Jiro Hotta",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148986-oVlbAQlBdmWh.png",
-        "voiceActors": [
-          {
-            "name": "Orion Pitts",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/5361.jpg"
-          },
-          {
-            "name": "Seiyu Fujiwara",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n209569-Pw0OHAVW211B.png"
-          },
-          {
-            "name": "Augusto de Souza",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n243745-dzVjkoIM2PQP.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Eizou Tanuma",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b362509-SE7kB4u1uiD1.png",
-        "voiceActors": [
-          {
-            "name": "Hisao Egawa",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96481-7houCLOMkp3g.png"
-          },
-          {
-            "name": "Nelson Machado",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n185016-eQj7HUcSm8XI.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Yuu",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b367201-upIKfAwWX4jF.png",
-        "voiceActors": [
-          {
-            "name": "Juliet Simmons",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/124165-H4pJed6F03Yq.jpg"
-          },
-          {
-            "name": "Iris Bassi",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n224046-bfxUhvAFSBr7.jpg"
-          },
-          {
-            "name": "Sayumi Suzushiro",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n126963-GnhNcLWFeKmy.png"
-          }
-        ]
-      },
-      {
-        "name": "Miu",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b367208-W3TVVh1LMb3p.png",
-        "voiceActors": [
-          {
-            "name": "Hayden Daviau",
-            "language": "ENGLISH",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129211-WGGfYI7WsnsH.jpg"
-          },
-          {
-            "name": "Anna Preto",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n367387-2ta9GDPHOtY3.jpg"
-          },
-          {
-            "name": "Ayana Taketatsu",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101996-W14XnDV34VpO.jpg"
-          }
-        ]
-      },
-      {
-        "name": "East Naruhata Koukou Dance Club Buchou",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b367209-mikhrotwvUQg.png",
-        "voiceActors": [
-          {
-            "name": "Aline Penteado",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n291161-1ClhLqlw1OcB.jpg"
-          },
-          {
-            "name": "Masumi Tazawa",
-            "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/23922-Slv15f8EbFOz.png"
-          }
-        ]
-      },
-      {
-        "name": "Tottoko Sisters",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-        "voiceActors": [
-          {
-            "name": "Marcella Almeida",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n213538-ywfbYAlZ12o4.png"
-          }
-        ]
-      },
-      {
-        "name": "Tottoko Sisters",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-        "voiceActors": [
-          {
-            "name": "Anna Preto",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n367387-2ta9GDPHOtY3.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Tottoko Sisters",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-        "voiceActors": [
-          {
-            "name": "Iris Bassi",
-            "language": "PORTUGUESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n224046-bfxUhvAFSBr7.jpg"
-          }
-        ]
+        "name": "Snipe",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191596-DnTHoaO7huTU.jpg",
+        "voiceActors": []
       }
     ],
     "relations": [
@@ -1985,53 +2065,71 @@
         "type": "MANGA"
       },
       {
-        "id": 185736,
+        "id": 21459,
         "title": {
-          "titles": "{'romaji': 'Vigilante: Boku no Hero Academia ILLEGALS', 'english': 'My Hero Academia: Vigilantes', 'native': 'ヴィジランテ -僕のヒーローアカデミア ILLEGALS-'}"
+          "titles": "{'romaji': 'Boku no Hero Academia', 'english': 'My Hero Academia', 'native': '僕のヒーローアカデミア'}"
+        },
+        "type": "ANIME"
+      },
+      {
+        "id": 191471,
+        "title": {
+          "titles": "{'romaji': 'Kekka Alright', 'english': None, 'native': 'けっかおーらい'}"
+        },
+        "type": "ANIME"
+      },
+      {
+        "id": 195322,
+        "title": {
+          "titles": "{'romaji': 'Vigilante: Boku no Hero Academia ILLEGALS 2nd Season', 'english': 'My Hero Academia: Vigilantes Season 2', 'native': 'ヴィジランテ -僕のヒーローアカデミア ILLEGALS- 第2期'}"
         },
         "type": "ANIME"
       }
     ],
     "trailer": {
       "site": "youtube",
-      "id": "i-8-xFFIOoM"
+      "id": "84F2-8QExiY"
     },
     "externalLinks": [
       {
-        "site": "TikTok",
-        "url": "https://www.tiktok.com/@vigilante_mha"
-      },
-      {
         "site": "Twitter",
         "url": "https://x.com/vigilante_mha"
-      },
-      {
-        "site": "Crunchyroll",
-        "url": "https://crunchyroll.com/series/G79H23ZQ3/my-hero-academia-vigilantes"
-      },
-      {
-        "site": "Official Site",
-        "url": "https://vigilante-anime.com/"
       },
       {
         "site": "Instagram",
         "url": "https://www.instagram.com/vigilante_mha/"
       },
       {
-        "site": "Twitter",
-        "url": "https://x.com/MHAOfficial"
+        "site": "TikTok",
+        "url": "https://www.tiktok.com/@vigilante_mha"
       },
       {
-        "site": "iQ",
-        "url": "https://www.iq.com/album/wo0dni32v9"
+        "site": "Official Site",
+        "url": "https://vigilante-anime.com/"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://crunchyroll.com/series/G79H23ZQ3/my-hero-academia-vigilantes"
       },
       {
         "site": "YouTube",
         "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji6xNpTPVde69l-VVcWyhVR"
+      },
+      {
+        "site": "Bilibili TV",
+        "url": "https://www.bilibili.tv/en/media/2125525"
+      },
+      {
+        "site": "iQ",
+        "url": "https://www.iq.com/album/284u94xx9dx"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/MHAOfficial"
       }
     ],
-    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195322-hqBf19mBtM5K.jpg",
-    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195322-LBvpKyDllb8T.jpg"
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185736-Ci6AiGwjKKtp.jpg",
+    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185736-Ick7OABzBWoi.jpg"
   },
   {
     "nome": "Seihantai na Kimi to Boku",
@@ -2067,7 +2165,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 79,
-    "popularity": 28880,
+    "popularity": 30519,
     "favourites": 399,
     "studios": [
       "Lapin Track",
@@ -2583,7 +2681,7 @@
   {
     "nome": "Darwin Jihen",
     "tipo": "Dublado",
-    "nota": "5.0",
+    "nota": "4.9",
     "url": "https://goyabu.io/anime/darwin-jihen-dublado",
     "episodios": [
       {
@@ -2613,7 +2711,7 @@
       "native": ""
     },
     "descricoes": "Created in a biological science lab, Charlie is a half human, half chimpanzee hybrid known as a \"Humanzee\". Raised by his adoptive human parents, Charlie is now 15 and starting high school. There he meets Lucy, a clever loner who becomes his first-ever friend. But his “normal” life is shattered when the animal rights extremists who freed his mother from the lab fifteen years ago reemerge as terrorists bent on kidnapping Charlie at all costs.\n<br><br>\n(Source: Kodansha USA) ",
-    "descricoes_pt": "Criado em um laboratório de ciências biológicas, Charlie é um híbrido meio humano, meio chimpanzé conhecido como \"Humanzee\". Criado por seus pais humanos adotivos, Charlie tem agora 15 anos e está começando o ensino médio. Lá ele conhece Lucy, uma solitária inteligente que se torna sua primeira amiga. Mas a sua vida “normal” é destruída quando os extremistas dos direitos dos animais que libertaram a sua mãe do laboratório há quinze anos ressurgem como terroristas decididos a raptar Charlie a todo o custo.\n<br><br>\n(Fonte: Kodansha EUA)",
+    "descricoes_pt": "Criado em um laboratório de ciências biológicas, Charlie é um híbrido meio humano e meio chimpanzé conhecido como \"Humanzee\". Criado por seus pais humanos adotivos, Charlie tem agora 15 anos e está começando o ensino médio. Lá ele conhece Lucy, uma solitária inteligente que se torna sua primeira amiga. Mas a sua vida “normal” é destruída quando os extremistas dos direitos dos animais que libertaram a sua mãe do laboratório há quinze anos ressurgem como terroristas decididos a raptar Charlie a todo o custo.\n<br><br>\n(Fonte: Kodansha EUA)",
     "generos": [
       "Sci-Fi",
       "Thriller"
@@ -2919,7 +3017,7 @@
       "native": ""
     },
     "descricoes": "As the war between the Imperial Army and Hellhorde rages on, the Princess, despite being armed with her mythical sword Excalibur, is captured and imprisoned. What kind of torture does she face at the hands of the chief demon interrogator? Fluffy fresh-baked toast! Hot, steaming ramen! Oh, the humanity! Can the Princess withstand these tormenting treats and keep her kingdom’s secrets safe?\n<br><br>\n(Source: Crunchyroll)",
-    "descricoes_pt": "À medida que a guerra entre o Exército Imperial e a Horda do Inferno continua, a Princesa, apesar de estar armada com sua espada mítica Excalibur, é capturada e aprisionada. Que tipo de tortura ela enfrenta nas mãos do interrogador-demônio-chefe? Torradas fresquinhas e fofas! Ramen quente e fumegante! Ah, a humanidade! Será que a princesa conseguirá resistir a essas delícias torturantes e manter os segredos de seu reino em segurança?\n<br><br>\n(Fonte: Crunchyroll)",
+    "descricoes_pt": "À medida que a guerra entre o Exército Imperial e a Horda do Inferno avança, a Princesa, apesar de estar armada com sua espada mítica Excalibur, é capturada e aprisionada. Que tipo de tortura ela enfrenta nas mãos do demônio interrogador-chefe? Torradas fresquinhas e fofas! Ramen quente e fumegante! Ah, a humanidade! Será que a princesa conseguirá resistir a essas delícias torturantes e manter os segredos de seu reino em segurança?\n<br><br>\n(Fonte: Crunchyroll)",
     "generos": [
       "Comedy",
       "Fantasy"
@@ -3413,7 +3511,7 @@
       "native": ""
     },
     "descricoes": "Sequel season to <i>TRIGUN STAMPEDE</i>.<br><br>\n\nIt’s been two and a half years since the Lost JuLai tragedy, which laid waste to an entire city and engulfed the whole planet in chaos. Meryl, now a senior journalist, continues her search for Vash with her new younger sidekick, Milly, and runs into Wolfwood along the way. As plant robberies begin taking place once again, they sense Millions Knives’s organization conspiring behind the scenes.<br><br>\n\nMeanwhile, Vash has taken the new name Eriks and is living in hiding in a backwater town when he gets an abrupt visit from Jessica, a young girl with an SOS from the third ship they call home. He thus decides to put an end to a long-standing feud in order to protect those dear to him.<br><br>\n\nJust as the pieces of the story begin falling back together again, the planet receives a message from the far reaches of outer space: “We are a fleet of colony ships from Earth... Those who wish may accompany us to a new frontier.” The entire population rejoices at this news. However, as if to mock their celebration, the one-winged angel returns to wreak havoc and despair. Fates collide to forge a final conclusion for the panicked planet.<br><br>\n\n(Source: Crunchyroll)",
-    "descricoes_pt": "Temporada de sequência de <i>TRIGUN STAMPEDE</i>.<br><br>\n\nJá se passaram dois anos e meio desde a tragédia de Lost JuLai, que devastou uma cidade inteira e envolveu todo o planeta no caos. Meryl, agora jornalista sênior, continua sua busca por Vash com sua nova companheira mais jovem, Milly, e encontra Wolfwood no caminho. À medida que os roubos de fábricas começam a acontecer novamente, eles sentem a organização da Millions Knives conspirando nos bastidores.<br><br>\n\nEnquanto isso, Vash adotou o novo nome de Eriks e está vivendo escondido em uma cidade remota quando recebe uma visita abrupta de Jessica, uma jovem com um SOS do terceiro navio que eles chamam de lar. Ele decide então pôr fim a uma rivalidade de longa data para proteger aqueles que lhe são queridos.<br><br>\n\nAssim que as peças da história começam a juntar-se novamente, o planeta recebe uma mensagem dos confins do espaço exterior: “Somos uma frota de naves coloniais da Terra... Aqueles que desejarem podem acompanhar-nos até uma nova fronteira.” Toda a população se alegra com esta notícia. No entanto, como se quisesse zombar de sua celebração, o anjo de uma asa retorna para causar estragos e desespero. Os destinos colidem para chegar a uma conclusão final para o planeta em pânico.<br><br>\n\n(Fonte: Crunchyroll)",
+    "descricoes_pt": "Temporada de sequência de <i>TRIGUN STAMPEDE</i>.<br><br>\n\nJá se passaram dois anos e meio desde a tragédia de Lost JuLai, que devastou uma cidade inteira e envolveu todo o planeta no caos. Meryl, agora jornalista sênior, continua sua busca por Vash com sua nova companheira mais jovem, Milly, e encontra Wolfwood no caminho. À medida que os roubos de fábricas começam a acontecer novamente, eles sentem a organização da Millions Knives conspirando nos bastidores.<br><br>\n\nEnquanto isso, Vash adotou o novo nome de Eriks e está vivendo escondido em uma cidade remota quando recebe uma visita abrupta de Jessica, uma jovem com um SOS do terceiro navio que eles chamam de lar. Ele decide então pôr fim a uma rivalidade de longa data para proteger aqueles que lhe são queridos.<br><br>\n\nAssim que as peças da história começam a juntar-se novamente, o planeta recebe uma mensagem dos confins do espaço exterior: “Somos uma frota de naves coloniais da Terra... Aqueles que desejarem podem acompanhar-nos até uma nova fronteira.” Toda a população se alegra com esta notícia. No entanto, como que para zombar da celebração, o anjo de uma asa retorna para causar estragos e desespero. Os destinos colidem para chegar a uma conclusão final para o planeta em pânico.<br><br>\n\n(Fonte: Crunchyroll)",
     "generos": [
       "Action",
       "Comedy",
@@ -3794,8 +3892,8 @@
     "episodes_total": 12,
     "duration": 24,
     "status": "RELEASING",
-    "averageScore": 67,
-    "popularity": 9321,
+    "averageScore": 68,
+    "popularity": 9699,
     "favourites": 83,
     "studios": [
       "KADOKAWA",
@@ -3925,7 +4023,7 @@
       },
       {
         "name": "Chie Hasumi",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b348547-LWT59CUb3bgX.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b348547-dZVtujStB2FP.png",
         "voiceActors": [
           {
             "name": "Maaya Uchida",
@@ -4024,7 +4122,7 @@
       },
       {
         "name": "Saku-chan",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382171-DWfwzZUBrgy7.png",
         "voiceActors": [
           {
             "name": "Misaki Kuno",
@@ -4035,7 +4133,7 @@
       },
       {
         "name": "Kenken",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382172-yl2Ym1YQPeYE.png",
         "voiceActors": [
           {
             "name": "Mutsumi Tamura",
@@ -4046,7 +4144,7 @@
       },
       {
         "name": "Yuzu-chan",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382173-4LwGGjTNOUPH.png",
         "voiceActors": [
           {
             "name": "Chiemi Tanaka",
@@ -4068,7 +4166,7 @@
       },
       {
         "name": "Enchou",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387172-LvRIuShV3Uy0.png",
         "voiceActors": [
           {
             "name": "Kyou Yaoya",
@@ -4090,7 +4188,7 @@
       },
       {
         "name": "Yumi-chan",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387174-UdLxyHarlI3S.png",
         "voiceActors": [
           {
             "name": "Mai Narumi",
@@ -4258,7 +4356,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 71,
-    "popularity": 16934,
+    "popularity": 17470,
     "favourites": 200,
     "studios": [
       "East Fish Studio",
@@ -4897,7 +4995,321 @@
           }
         ]
       }
-    ]
+    ],
+    "títulos": {
+      "romaji": "",
+      "english": "",
+      "native": ""
+    },
+    "descricoes": "The fire extinguishing samurai who stopped the great fire was called \"The fire-eating bird\". Matsunaga Gengo, once known as the \"Fire-eating Bird\", was the best fire-fighting samurai in Edo. He had resigned from the fire brigade for a reason but suddenly received an invitation to serve in the Shinjo clan.<br><br> \n\nThe Shinjo clan's fire-fighting team had no money and no personnel and was looked down upon by those around them. With the encouragement of his wife, Miyuki, Gengo decides to rebuild the collapsed fire-fighting clan as its chairman. Gengo and his friends, all of whom have their own peculiarities, struggle to \"save any life\", despite being ridiculed as \"ragged steeplejacks\"(= the 'Boro-Tobi-Gumi'.), In Edo, a mysterious series of suspicious fires called \"foxfires\" continue.\n<br><br>\nAn entertaining action drama opens, with the firefighters scrambling to save lives in the face of the approaching disaster!\n<br><br>\n(Source: Amuse Creative Studio)",
+    "descricoes_pt": "O samurai extintor de incêndio que parou o grande incêndio foi chamado de \"O pássaro comedor de fogo\". Matsunaga Gengo, outrora conhecido como o \"Pássaro Comedor de Fogo\", foi o melhor samurai combatente de incêndio em Edo. Ele pediu demissão do corpo de bombeiros por um motivo, mas de repente recebeu um convite para servir no clã Shinjo.<br><br> \n\nA equipe de combate a incêndios do clã Shinjo não tinha dinheiro nem pessoal e era desprezada por aqueles ao seu redor. Com o incentivo de sua esposa, Miyuki, Gengo decide reconstruir o clã de combate a incêndios em colapso como seu presidente. Gengo e seus amigos, todos com peculiaridades próprias, lutam para \"salvar qualquer vida\", apesar de serem ridicularizados como \"campanários esfarrapados\" (= o 'Boro-Tobi-Gumi'.). Em Edo, uma série misteriosa de incêndios suspeitos chamados \"foxfires\" continuam.\n<br><br>\nUm divertido drama de ação começa, com os bombeiros lutando para salvar vidas diante do desastre que se aproxima!\n<br><br>\n(Fonte: Amuse Creative Studio)",
+    "generos": [
+      "Action",
+      "Drama"
+    ],
+    "episodes_total": null,
+    "duration": 24,
+    "status": "RELEASING",
+    "averageScore": 43,
+    "popularity": 3297,
+    "favourites": 29,
+    "studios": [
+      "SynergySP",
+      "AMUSE CREATIVE STUDIO",
+      "CBC TV",
+      "Akita Shoten",
+      "SynergySP"
+    ],
+    "staff": [
+      {
+        "name": "You Oizumi",
+        "role": "Theme Song Lyrics (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95948-AHqYve9XWwIQ.png"
+      },
+      {
+        "name": "You Oizumi",
+        "role": "Theme Song Performance (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95948-AHqYve9XWwIQ.png"
+      },
+      {
+        "name": "Yasuharu Takanashi",
+        "role": "Music",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/5070.jpg"
+      },
+      {
+        "name": "Hajime Kamegaki",
+        "role": "Chief Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102502-LOV7iUEZDy84.png"
+      },
+      {
+        "name": "Kouji Tamaki",
+        "role": "Theme Song Composition (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/17133.jpg"
+      },
+      {
+        "name": "Yoriko Tomita",
+        "role": "Script",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n124913-NqKMVFvLpMWW.jpg"
+      },
+      {
+        "name": "Akiyoshi Tanaka",
+        "role": "Sound Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Shogo Imamura ",
+        "role": "Original Story",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n173459-5rqVnXhQKkD0.png"
+      },
+      {
+        "name": "Takeshi Sanada",
+        "role": "CG Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Ryuusuke Mori",
+        "role": "Series Composition",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Ryuusuke Mori",
+        "role": "Script",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Gengo Matsunaga",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b375289-2PdtB12BMiNa.png",
+        "voiceActors": [
+          {
+            "name": "Yuuichirou Umehara",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/118908-f16PugVCnZfT.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Seijurou Kaji",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b375290-PUwAVSik8eu2.png",
+        "voiceActors": [
+          {
+            "name": "Kenshou Ono",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95819-O4fosAY0a1Ml.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Shinnosuke Torigoe",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b375291-deqMuHBY8ReQ.png",
+        "voiceActors": [
+          {
+            "name": "Shuichirou Umeda",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n236715-AqVwesOw9zVK.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Torajirou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b375292-nMMU8QiG5ekF.png",
+        "voiceActors": [
+          {
+            "name": "Subaru Kimura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n107480-h2RgLXNP7hcj.png"
+          }
+        ]
+      },
+      {
+        "name": "Hikoya",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b375293-nZvjlOj5gLjU.png",
+        "voiceActors": [
+          {
+            "name": "Nobunaga Shimazaki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105989-96etzH1dLNug.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Jinsuke",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382110-JAoRCqgQO6wg.png",
+        "voiceActors": [
+          {
+            "name": "Kento Itou",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n122874-Ay8XWEJ7ljUf.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Rokuemon Houjou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382111-dWeHshD1JAAn.png",
+        "voiceActors": [
+          {
+            "name": "Naoya Uchida",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95338-hoqbedi0LHZf.png"
+          }
+        ]
+      },
+      {
+        "name": "Samon Orishimo",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382112-hnkGTT1dPS7b.png",
+        "voiceActors": [
+          {
+            "name": "Kouji Yusa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95068-AbL4cVGlYaM8.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Renji",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382113-Dmw4nQB347xE.png",
+        "voiceActors": [
+          {
+            "name": "Yasuaki Takumi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/11510.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Kingorou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382114-Mxk3dJp7TKFT.png",
+        "voiceActors": [
+          {
+            "name": "Shinpachi Tsuji",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95800-TBMYjwu8Wy6T.png"
+          }
+        ]
+      },
+      {
+        "name": "Akiyo",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382115-EYKtILeD233w.png",
+        "voiceActors": [
+          {
+            "name": "Aya Hisakawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95080-7dOAcrnsSghI.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Moriemon Dategasaki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382116-VUNXWqudsps7.png",
+        "voiceActors": [
+          {
+            "name": "Shinnosuke Ogami ",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n154090-VbzpIPxbXM5q.png"
+          }
+        ]
+      },
+      {
+        "name": "Osuzu",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382117-RNYlW9wU0axJ.png",
+        "voiceActors": [
+          {
+            "name": "Kana Ichinose",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n124390-03LHel2XSFel.png"
+          }
+        ]
+      },
+      {
+        "name": "Heizou Hasegawa",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382118-VimSIdTDvquo.png",
+        "voiceActors": [
+          {
+            "name": "Tetsuo Komura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/1682.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Tougorou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382119-oyz1uFtPhbnD.png",
+        "voiceActors": [
+          {
+            "name": "Shinichirou Miki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95022-BXggjIr4KHqd.png"
+          }
+        ]
+      },
+      {
+        "name": "Miyuki",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382820-ly1fV2McA6cb.png",
+        "voiceActors": [
+          {
+            "name": "Ayaka Miyoshi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n382821-7gaCmFQjLFiQ.png"
+          }
+        ]
+      },
+      {
+        "name": "Kankurou Ooto",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382825-QBHUj9Bc7ZWa.png",
+        "voiceActors": [
+          {
+            "name": "Junichi Suwabe",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95095-DvSjTQnqcgXP.png"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": 187063,
+        "title": {
+          "titles": "{'romaji': 'Hikuidori Ushuuboro Tobigumi', 'english': 'Oedo Fire Slayer -The Legend of Phoenix-', 'native': '火喰鳥 羽州ぼろ鳶組'}"
+        },
+        "type": "MANGA"
+      }
+    ],
+    "trailer": {
+      "site": "youtube",
+      "id": "bB6qXk2YOYE"
+    },
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://hikuidori-project.com/"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://x.com/hikuidori_pj"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/GT00365724/oedo-fire-slayer--the-legend-of-phoenix-"
+      },
+      {
+        "site": "YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jgg8qGQKMckY8CM8ewbQAFo"
+      }
+    ],
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187062-JuXPEjrLQSeO.png",
+    "fanart": null
   },
   {
     "nome": "Goumon Baito-kun no Nichijou",
@@ -4939,8 +5351,8 @@
     "episodes_total": 12,
     "duration": 24,
     "status": "RELEASING",
-    "averageScore": 53,
-    "popularity": 5894,
+    "averageScore": 54,
+    "popularity": 5988,
     "favourites": 55,
     "studios": [
       "KADOKAWA",
@@ -5630,316 +6042,786 @@
       "english": "",
       "native": ""
     },
-    "descricoes": "Noah, the world’s strongest six-year-old, has been privileged enough to be reborn as the emperor’s 13th child. What’s more, he’s been overpowered with an infinite level cap and a cheat that stacks the powers of anyone who serves him. But even privilege has its problems—the glittering facade of high society hides a world of conspiracies, schemes, and power struggles.\n<br><br>\n(Source: Crunchyroll)",
-    "descricoes_pt": "Noah, o menino de seis anos mais forte do mundo, teve o privilégio de renascer como o 13º filho do imperador. Além do mais, ele foi dominado por um limite de nível infinito e um truque que acumula os poderes de qualquer um que o sirva. Mas mesmo os privilégios têm os seus problemas: a fachada brilhante da alta sociedade esconde um mundo de conspirações, esquemas e lutas pelo poder.\n<br><br>\n(Fonte: Crunchyroll)",
+    "descricoes": "The world's number one assassin has been reincarnated as the eldest son of a family of aristocrat assassins. In exchange for being reincarnated in another world, a goddess has imposed upon him one condition. \"Kill the Hero who is prophesied to destroy the world.\" <br>\n<br>\nThis was to be the mission in his new life. The synergistic effect of the vast knowledge and experience he gained that made all manner of assassinations possible in the modern world, and the secret techniques and magic of the fantasy world's most powerful family of assassins turn him into the greatest assassin of all time.<br>\n<br>\n(Source: Crunchyroll)",
+    "descricoes_pt": "O assassino número um do mundo reencarnou como o filho mais velho de uma família de assassinos aristocratas. Em troca de reencarnar em outro mundo, uma deusa impôs-lhe uma condição. \"Mate o herói que está profetizado para destruir o mundo.\" <br>\n<br>\nEsta seria a missão em sua nova vida. O efeito sinérgico do vasto conhecimento e experiência que ele adquiriu, que tornou possíveis todos os tipos de assassinatos no mundo moderno, e as técnicas secretas e a magia da família de assassinos mais poderosa do mundo da fantasia, o transformam no maior assassino de todos os tempos.<br>\n<br>\n(Fonte: Crunchyroll)",
     "generos": [
       "Action",
       "Adventure",
-      "Fantasy"
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Romance"
     ],
-    "episodes_total": null,
+    "episodes_total": 12,
     "duration": 24,
-    "status": "RELEASING",
-    "averageScore": 61,
-    "popularity": 16917,
-    "favourites": 242,
+    "status": "FINISHED",
+    "averageScore": 72,
+    "popularity": 172867,
+    "favourites": 3883,
     "studios": [
-      "Pony Canyon",
-      "CompTown",
-      "SB Creative",
-      "NADA HOLDINGS",
-      "Sammy",
+      "SILVER LINK.",
+      "Studio Palette",
+      "Glovision",
+      "Lantis",
+      "Bandai Namco Arts",
+      "KADOKAWA",
+      "AT-X",
+      "TV Aichi",
       "Movic",
-      "TOKYO MX",
-      "BS Nittele"
+      "Crunchyroll",
+      "Kadokawa Media House"
     ],
     "staff": [
       {
-        "name": "Masahiro Gotou",
-        "role": "Editing",
+        "name": "Katsuhiko Takayama",
+        "role": "Script (eps 1-12)",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101596-2Lr3xZ2xBnGU.png"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102034-gxumMlPS4K3P.jpg"
       },
       {
-        "name": "Michio Fukuda",
-        "role": "Director",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105428-f4N2dkIvoM7d.png"
-      },
-      {
-        "name": "Takafumi Wada",
-        "role": "Music",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105902-Q2WRGHlgUkZ7.jpg"
-      },
-      {
-        "name": "Kyo",
-        "role": "Original Character Design",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n114079-RX3hW2d8oYnv.jpg"
-      },
-      {
-        "name": "Nobuyuki Abe",
-        "role": "Sound Director",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Ayumi Nishihata",
-        "role": "Character Design",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n120021-KQr7zb5ThbTV.png"
-      },
-      {
-        "name": "Nazuna Miki",
-        "role": "Original Story",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n124275-O2mlu68dwtCl.png"
-      },
-      {
-        "name": "Haruko Nobori",
-        "role": "Color Design",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n146515-mP8tctUynJXE.png"
-      },
-      {
-        "name": "Takashi Kawashima",
-        "role": "Character Design",
-        "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
-      },
-      {
-        "name": "Toshiaki Satou",
+        "name": "Katsuhiko Takayama",
         "role": "Series Composition",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102034-gxumMlPS4K3P.jpg"
       },
       {
-        "name": "Seung-Deok Kim",
-        "role": "Assistant Director",
-        "language": "KOREAN",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+        "name": "Aira Yuuki",
+        "role": "Insert Song Lyrics (eps 7, 8, 10, 11)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103810-XaAKUzsRFBB5.jpg"
       },
       {
-        "name": "Azusa Tachibana",
+        "name": "Aira Yuuki",
         "role": "Theme Song Performance (ED)",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n337852-tQCDWWlBYpg5.png"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103810-XaAKUzsRFBB5.jpg"
       },
       {
-        "name": "Yu-Hyeon Kang",
-        "role": "Art Director",
+        "name": "Aira Yuuki",
+        "role": "Theme Song Lyrics (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103810-XaAKUzsRFBB5.jpg"
+      },
+      {
+        "name": "Aira Yuuki",
+        "role": "Theme Song Composition (ED)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103810-XaAKUzsRFBB5.jpg"
+      },
+      {
+        "name": "Jouji Yanase",
+        "role": "Animation Director (eps 3, 5)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n104173-GhUawFOpzCgW.png"
+      },
+      {
+        "name": "Hachidai Takayama",
+        "role": "Background Art (eps 6, 7, 10, 12)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
       },
       {
-        "name": "Harumi Nakazato",
-        "role": "Art Director",
+        "name": "Kenichi Umemoto",
+        "role": "Key Animation (eps 4, 6)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
       },
       {
-        "name": "Chengxiao Lu",
-        "role": "Art Director",
+        "name": "Kenji Hattori",
+        "role": "Animation Director (ep 4)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106202-fJu4h7JO1RFU.jpg"
+      },
+      {
+        "name": "Toshiyuki Satou",
+        "role": "Key Animation (OP)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n107357-96PgjYcdwBFt.png"
+      },
+      {
+        "name": "Masayoshi Nishida",
+        "role": "Storyboard (ep 7)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111745-gzlCu4SAKOOX.jpg"
+      },
+      {
+        "name": "Natsuko Suzuki",
+        "role": "Key Animation (ep 5)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n112989-eksi9qGnaiQz.jpg"
+      },
+      {
+        "name": "Juuji Mizumura",
+        "role": "Key Animation (eps 9, 11)",
         "language": "JAPANESE",
         "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
       },
       {
-        "name": "SUPER★DRAGON",
-        "role": "Theme Song Performance (OP)",
+        "name": "Masanori Tsuchiya",
+        "role": "Sound Director",
         "language": "JAPANESE",
-        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n377491-F05xcMRKf95R.jpg"
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118429-eFZyGyfkQN9f.jpg"
+      },
+      {
+        "name": "Eri Osada",
+        "role": "Animation Director (OP, eps 2, 10, 12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118589-WdN1EBTqaFyJ.png"
+      },
+      {
+        "name": "Eri Osada",
+        "role": "Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118589-WdN1EBTqaFyJ.png"
+      },
+      {
+        "name": "Eri Osada",
+        "role": "Eyecatch (eps 1-12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118589-WdN1EBTqaFyJ.png"
+      },
+      {
+        "name": "Reina Ueda",
+        "role": "Insert Song Performance (eps 7, 10)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118602-SFsQabl6KLu9.png"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Key Animation (OP, eps 1, 6, 10-12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Animation Director (eps 1, 9-12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Assistant Animation Director (eps 3, 6-8)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Episode Director (eps 1, 2, 6, 10, 12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
+      },
+      {
+        "name": "Masafumi Tamura",
+        "role": "Storyboard (eps 1-3, 6, 7, 9, 11, 12)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118607-65H4Be89Shta.jpg"
       }
     ],
     "characters": [
       {
-        "name": "Noah Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377492-gDQL9gfkYOWW.png",
+        "name": "Lugh Tuatha Dé",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157687-F64XEDMqU9hX.png",
         "voiceActors": [
           {
-            "name": "Karin Nanami",
+            "name": "Kenji Akabane",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n122695-XDxBt1Zpty97.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102512-3nVZNCewjZYm.png"
+          },
+          {
+            "name": "Makoto Koichi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129325-RhR0e5aA6Yj5.png"
+          },
+          {
+            "name": "Ricardo Bautista",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106537-EXMQh9GchWPA.jpg"
+          },
+          {
+            "name": "Tim Schwarzmaier",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n132486-VQ8o7ToC8ij7.png"
+          },
+          {
+            "name": "Mattheus Caliano",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n175519-HUYIgGGOb8Rm.jpg"
+          },
+          {
+            "name": "Christian Banas",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n248175-ndETyHK3eFsf.png"
+          },
+          {
+            "name": "Marco Eßer",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+          },
+          {
+            "name": "Mick Lauer",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n161616-nlxQVIIg2Zlp.jpg"
+          },
+          {
+            "name": "Guilherme Lopes",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106531-vOxd4fxQt9UL.jpg"
           }
         ]
       },
       {
-        "name": "Zoey",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377493-Jiqic4iB7TJM.png",
+        "name": "Maha",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157688-nOJWSGEB4Xse.jpg",
         "voiceActors": [
           {
-            "name": "Saki Miyashita",
+            "name": "Shino Shimoji",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n126572-cKEcC3iuTkkc.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118841-X6nIv6aMxf0m.png"
+          },
+          {
+            "name": "Valentina Souza",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182455-785l5xplDPf7.jpg"
+          },
+          {
+            "name": "Josephine Schmidt",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/15555.jpg"
+          },
+          {
+            "name": "Gabriela Salman",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n262310-NLEmX3qjlZxU.jpg"
+          },
+          {
+            "name": "Hayden Bishop",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n265385-x8IapYJ9yusv.png"
           }
         ]
       },
       {
-        "name": "Evelyn",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377494-jtyN0s59XoVk.png",
+        "name": "Tarte",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157689-JynXVx2niy2I.png",
         "voiceActors": [
           {
-            "name": "Yui Ishikawa",
+            "name": "Yuuki Takada",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100142-k6RP0HzXffUG.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119154-x2un4m4ECxn4.png"
+          },
+          {
+            "name": "Azul Valadez",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n189430-Mkuq464GJSnL.jpg"
+          },
+          {
+            "name": "Jodie Blank",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n140262-zWOru2zKOTAD.jpg"
+          },
+          {
+            "name": "Tabata Portella",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n262309-Md81cXW1p9xb.jpg"
+          },
+          {
+            "name": "Courtney Lin",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n260341-GVr9yCx15jOx.png"
           }
         ]
       },
       {
-        "name": "Shirley Grantz",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377495-2miKoo4A9vSX.png",
+        "name": "Esri Tuatha Dé",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157690-UxH00e6GBDbw.png",
         "voiceActors": [
           {
-            "name": "Iori Saeki",
+            "name": "Chiaki Takahashi",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n139844-zjqS38xT2FK4.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95584-TgaiagGVcsSp.jpg"
+          },
+          {
+            "name": "Anette Ugalde",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n201434-LbV9h63dKTof.png"
+          },
+          {
+            "name": "Cláudia Ricart",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n262308-VhS31LcNyO6s.jpg"
+          },
+          {
+            "name": "Leonie Dubuc",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n133020-z6I7rNzbt4ms.png"
           }
         ]
       },
       {
-        "name": "Gigi",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377496-Kw2jyJ4MOkWw.png",
+        "name": "Dia",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157691-TY88sUXtm1Br.png",
         "voiceActors": [
           {
-            "name": "Misaki Watada",
+            "name": "Reina Ueda",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n152199-VVKAzgSZLFqX.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118602-SFsQabl6KLu9.png"
+          },
+          {
+            "name": "Cecilia Guerrero",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n193993-gpStxil5ofeR.png"
+          },
+          {
+            "name": "Daniela Molina",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n133021-ernYdy9fTkVe.png"
+          },
+          {
+            "name": "Isabelle Cunha",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n139001-gHpX7R99hM9T.jpg"
+          },
+          {
+            "name": "Caitlin Glass",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95313-zK3WpeNtACvm.jpg"
           }
         ]
       },
       {
-        "name": "Alichey",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377497-KVeX8EaQk7U4.png",
+        "name": "Cian Tuatha Dé",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157692-In52r8Wk8VoG.png",
         "voiceActors": [
           {
-            "name": "Azusa Tachibana",
+            "name": "Toshiyuki Morikawa",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n337852-tQCDWWlBYpg5.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95006-hoLuiZANeD3Q.png"
+          },
+          {
+            "name": "Roberto Molina",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n153193-NoB21CILLXvI.jpg"
+          },
+          {
+            "name": "Malta Júnior",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182487-MANbUvQbIY8W.jpg"
+          },
+          {
+            "name": "Georgios Tzitzikos",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+          },
+          {
+            "name": "Kyle Hebert",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95336-VVMKFINwPYZ8.jpg"
           }
         ]
       },
       {
-        "name": "Gilbert Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380216-PzFKraHMyY2E.png",
+        "name": "Megami",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250641-vKNiCQHqxNE4.jpg",
         "voiceActors": [
           {
-            "name": "Shinichirou Miki",
+            "name": "Yukari Tamura",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95022-BXggjIr4KHqd.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95027-Zm9onZDUN7ih.jpg"
+          },
+          {
+            "name": "Gabriela Gris",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n233527-lTc7DURT6PnD.png"
+          },
+          {
+            "name": "Taís Feijó",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182115-IFSVCC5xSH09.jpg"
+          },
+          {
+            "name": "Olivia Büschken",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n141263-0zNyhJOhOsRZ.png"
+          },
+          {
+            "name": "Veronica Taylor",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95905-X3mxkcZkmmKN.jpg"
           }
         ]
       },
       {
-        "name": "Albert Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380217-aMEbzh5rTnZq.png",
+        "name": "Epona Rhiannon",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b255137-H3cGSXVH0pzp.jpg",
+        "voiceActors": []
+      },
+      {
+        "name": "Kelly",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b255536-ihDdXgs1o7YY.png",
         "voiceActors": [
           {
-            "name": "Kouji Yusa",
+            "name": "Nene Momosuzu",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95068-AbL4cVGlYaM8.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n206025-kQEqcuSVBIxt.png"
+          },
+          {
+            "name": "Fernanda Ornelas",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n193989-Gr5G1CNNXd3K.png"
+          },
+          {
+            "name": "Milena Rybiczka",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+          },
+          {
+            "name": "Thati Carvalho",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n218388-mwzYSECF8SYI.jpg"
           }
         ]
       },
       {
-        "name": "Oscar Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380218-hwix3Vilwn10.png",
+        "name": "MC",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b256605-bWcHALvFaa4A.png",
         "voiceActors": [
           {
-            "name": "Kengo Kawanishi",
+            "name": "Subaru Kimura",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n110877-8mqVadVTaFl4.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n107480-h2RgLXNP7hcj.png"
+          },
+          {
+            "name": "Pedro Azevedo",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n180889-kUBULRAzIQF6.jpg"
           }
         ]
       },
       {
-        "name": "Henry Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380219-PLBg8HzZDTlF.png",
+        "name": "Samurai",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b257046-dUDww72cETfx.png",
         "voiceActors": [
           {
-            "name": "Daisuke Ono",
+            "name": "Tomokazu Sugita",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95212-wX1M4LJN96q2.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95002-nDIvHaynicEg.png"
+          },
+          {
+            "name": "Carlos Segundo",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102098-X6Dra5lKc2B8.png"
+          },
+          {
+            "name": "Nando Sierpe",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182697-EQli99CBx243.jpg"
           }
         ]
       },
       {
-        "name": "Ouhi",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+        "name": "Tokushubutai Taiin",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b258084-6NFL9DMtSeGT.png",
         "voiceActors": [
           {
-            "name": "Nana Mizuki",
+            "name": "Hiroki Yasumoto",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95081-qto4UanYkpQT.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95025-LGHr4VufmfCc.jpg"
+          },
+          {
+            "name": "Óscar Gamboa",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n205197-EMuHl432qOj9.png"
           }
         ]
       },
       {
-        "name": "Indra Ararat",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382951-kEi8NcFbUz6N.png",
+        "name": "Paparazzi",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b258085-ISuFXnWrroj4.png",
         "voiceActors": [
           {
-            "name": "Tetsuo Komura",
+            "name": "Junichi Suwabe",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/1682.jpg"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95095-DvSjTQnqcgXP.png"
+          },
+          {
+            "name": "Cafi Ballousier",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182484-3VSe8gQta4aO.jpg"
           }
         ]
       },
       {
-        "name": "Koutei",
-        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382952-y9qgh9zPyUuX.png",
+        "name": "Kyoushi",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b259322-5RWrONYcCis7.png",
         "voiceActors": [
           {
-            "name": "Kazuhiko Inoue",
+            "name": "Risa Hayamizu",
             "language": "JAPANESE",
-            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95021-9qAoAn6GNZ3S.png"
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95215-CvyYAqsZaaaK.png"
+          },
+          {
+            "name": "Karen Nunes",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n180893-uJolcFCGdDPr.png"
+          }
+        ]
+      },
+      {
+        "name": "Noin",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260254-FCMw2Clr1dyk.png",
+        "voiceActors": [
+          {
+            "name": "Yui Ninomiya",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n125943-d3vdb6kAbOzI.png"
+          },
+          {
+            "name": "Susana Moreno",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n139016-LGCdBkcRQzWI.png"
+          },
+          {
+            "name": "Lea Kalbhenn",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n132376-NnxwcIjpz1Oc.png"
+          },
+          {
+            "name": "Marianna Alexandre",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n228768-mjmNJ9UUeX6F.jpg"
+          },
+          {
+            "name": "Cristina Vee",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95489-oq44nRsWj8NN.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Efa",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260255-P3cz1XLIA2PF.png",
+        "voiceActors": [
+          {
+            "name": "Chiyuki  Miura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n140853-vukwnaiv2b8g.jpg"
+          },
+          {
+            "name": "Scarlet Miuller",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n246146-reGJ1k0UCsMZ.png"
+          },
+          {
+            "name": "Rieke Werner",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101117-Owts3TGv6QZn.png"
+          },
+          {
+            "name": "Raquel Masuet",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n175173-S10ZVNRic4IX.png"
+          }
+        ]
+      },
+      {
+        "name": "Michelle",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260256-DjC7jJYIdZ9g.png",
+        "voiceActors": [
+          {
+            "name": "Saima Nakano",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n115480-n2LmLGvo1RKQ.png"
+          },
+          {
+            "name": "Casandra Acevedo",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n193992-LzwLEc50U9TU.png"
+          },
+          {
+            "name": "Carina Eiras",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n175180-2o8waWyRT2es.jpg"
+          },
+          {
+            "name": "Marie Hinze",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n153410-ug0Os3E2foxO.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Connor",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260257-xmGp7ppGcHo4.png",
+        "voiceActors": [
+          {
+            "name": "Akane Matsunaga",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n125939-mkdxiBTIvNVN.png"
+          },
+          {
+            "name": "Amellalli Guevara",
+            "language": "SPANISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n221907-6qjtTT45vUW5.png"
+          },
+          {
+            "name": "Ana Elena Bittencourt",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n139004-ggZWLgqjvmOa.jpg"
+          },
+          {
+            "name": "Isabella Vinet",
+            "language": "GERMAN",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n138241-37CgI4qWAVx7.png"
+          },
+          {
+            "name": "Ryan Bartley",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129224-UOYnTHSiSC9C.png"
+          }
+        ]
+      },
+      {
+        "name": "Lloyd",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327355-T5RYpjRNsMmZ.png",
+        "voiceActors": [
+          {
+            "name": "Hiroki Matsukawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119048-7hScWHmCgSL7.png"
+          },
+          {
+            "name": "Hércules Franco",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n176919-H5w1uf4J2iRQ.png"
+          }
+        ]
+      },
+      {
+        "name": "Setanta Macness",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327356-WoqO4r8vdkbB.png",
+        "voiceActors": [
+          {
+            "name": "Kishou Taniyama",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95196-t2vbxQMee0ci.png"
+          },
+          {
+            "name": "Philippe Maia",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n182673-doUTkFhXbpo1.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Azba Venkaur Hakushaku",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327357-gocGEQdcqaw5.png",
+        "voiceActors": [
+          {
+            "name": "Tokuyoshi Kawashima",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95911-OTi0Qqvbjphr.jpg"
+          },
+          {
+            "name": "Rafael Pinheiro",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n264325-rcVDIwX9nap5.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Ronah Tuatha Dé",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327358-jUPOqaV9xYhJ.png",
+        "voiceActors": [
+          {
+            "name": "Daisuke Masuoka",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n191240-t0myNar9WBie.png"
+          },
+          {
+            "name": "Renan Ribeiro",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n139005-hRAuydFoceGA.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Claris",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327359-Tfx5RrJrYbu3.png",
+        "voiceActors": [
+          {
+            "name": "Chie Nakamura",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95300-84lMPsAHkPP3.png"
+          },
+          {
+            "name": "Tonia Mesquita",
+            "language": "PORTUGUESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n186419-No2MjyEjNVeS.png"
           }
         ]
       }
     ],
     "relations": [
       {
-        "id": 127165,
+        "id": 107604,
         "title": {
-          "titles": "{'romaji': 'Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru', 'english': 'Noble Reincarnation ~Born Blessed, So I’ll Obtain Ultimate Power~', 'native': '貴族転生 ～恵まれた生まれから最強の力を得る～'}"
+          "titles": "{'romaji': 'Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru', 'english': \"The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat\", 'native': '世界最高の暗殺者、異世界貴族に転生する'}"
         },
         "type": "MANGA"
       },
       {
-        "id": 127166,
+        "id": 107603,
         "title": {
-          "titles": "{'romaji': 'Kizoku Tensei: Megumareta Umare kara Saikyou no Chikara wo Eru', 'english': None, 'native': '貴族転生 ～恵まれた生まれから最強の力を得る～'}"
+          "titles": "{'romaji': 'Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru', 'english': \"The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat\", 'native': '世界最高の暗殺者、異世界貴族に転生する'}"
         },
         "type": "MANGA"
+      },
+      {
+        "id": 169579,
+        "title": {
+          "titles": "{'romaji': 'Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru 2nd Season', 'english': None, 'native': '世界最高の暗殺者、異世界貴族に転生する 2ndシーズン'}"
+        },
+        "type": "ANIME"
       }
     ],
     "trailer": {
       "site": "youtube",
-      "id": "RIj0yJCVNuU"
+      "id": "M-ievQUYHA4"
     },
     "externalLinks": [
       {
         "site": "Official Site",
-        "url": "https://kizoku-tensei.com/"
+        "url": "https://ansatsu-kizoku.jp/"
       },
       {
         "site": "Twitter",
-        "url": "https://x.com/kizokutensei_PR"
-      },
-      {
-        "site": "TikTok",
-        "url": "https://www.tiktok.com/@kizokutensei_pr"
+        "url": "https://twitter.com/ansatsu_kizoku"
       },
       {
         "site": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/series/GT00365721/noble-reincarnation-born-blessed-so-ill-obtain-ultimate-power"
+        "url": "https://crunchyroll.com/series/GMEHME55K"
+      },
+      {
+        "site": "YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0PWwz5cS6rncbDhX-J3AeV"
       },
       {
         "site": "Bilibili TV",
-        "url": "https://www.bilibili.tv/en/media/2289875"
+        "url": "https://www.bilibili.tv/media/1019621"
+      },
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81511191"
       }
     ],
-    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185993-BecPUaWfZJgR.png",
-    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185993-6H7wGuRpwoSL.jpg"
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx129898-FRUzDtPhRigt.jpg",
+    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/129898-Qp41lxD3wU9e.jpg"
   },
   {
     "nome": "Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai sareru",
@@ -5972,8 +6854,8 @@
     "episodes_total": 12,
     "duration": 24,
     "status": "RELEASING",
-    "averageScore": 63,
-    "popularity": 10043,
+    "averageScore": 61,
+    "popularity": 10344,
     "favourites": 100,
     "studios": [
       "Studio DEEN",
@@ -6185,7 +7067,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 79,
-    "popularity": 28880,
+    "popularity": 30519,
     "favourites": 399,
     "studios": [
       "Lapin Track",
@@ -7243,7 +8125,7 @@
     "duration": 23,
     "status": "RELEASING",
     "averageScore": 64,
-    "popularity": 13214,
+    "popularity": 13532,
     "favourites": 166,
     "studios": [
       "Yokohama Animation Lab",
@@ -7617,7 +8499,7 @@
       "native": ""
     },
     "descricoes": "In the mid-21st century, Tokyo's mafia can turn into ether-enhanced Demon Lords, and Braves hunt them down. Yashiro, the Grim Reaper, reluctantly takes a new apprentice named Aki Jogamine, a high school girl training to become a Brave. He soon finds himself dragged into one troublesome case after another. The supernatural story of a scumbag master and his self-proclaimed apprentice begins!<br><br>(Source: Crunchyroll)",
-    "descricoes_pt": "Em meados do século 21, a máfia de Tóquio pode se transformar em Lordes Demônios aprimorados com éter, e Braves os caça. Yashiro, o Grim Reaper, relutantemente aceita um novo aprendiz chamado Aki Jogamine, uma estudante do ensino médio treinando para se tornar uma Brava. Ele logo se vê arrastado para um caso problemático após o outro. A história sobrenatural de um mestre canalha e seu autoproclamado aprendiz começa!<br><br>(Fonte: Crunchyroll)",
+    "descricoes_pt": "Em meados do século 21, a máfia de Tóquio pode se transformar em Demon Lords aprimorados com éter, e Braves os caça. Yashiro, o Grim Reaper, relutantemente aceita um novo aprendiz chamado Aki Jogamine, uma estudante do ensino médio que está treinando para se tornar uma Brava. Ele logo se vê arrastado para um caso problemático após o outro. A história sobrenatural de um mestre canalha e seu autoproclamado aprendiz começa!<br><br>(Fonte: Crunchyroll)",
     "generos": [
       "Action",
       "Comedy",
@@ -7629,7 +8511,7 @@
     "duration": 23,
     "status": "RELEASING",
     "averageScore": 61,
-    "popularity": 8025,
+    "popularity": 8201,
     "favourites": 67,
     "studios": [
       "OLM",
@@ -7898,7 +8780,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 61,
-    "popularity": 8609,
+    "popularity": 8906,
     "favourites": 132,
     "studios": [
       "GA-CREW",
@@ -8121,8 +9003,8 @@
     "episodes_total": 12,
     "duration": 24,
     "status": "RELEASING",
-    "averageScore": 60,
-    "popularity": 11449,
+    "averageScore": 61,
+    "popularity": 11682,
     "favourites": 110,
     "studios": [
       "SynergySP",
@@ -8422,7 +9304,552 @@
           }
         ]
       }
-    ]
+    ],
+    "títulos": {
+      "romaji": "",
+      "english": "",
+      "native": ""
+    },
+    "descricoes": "In a Holy Grail War, Mages (Masters) and their Heroic Spirits (Servants) fight for the control of the Holy Grail—an omnipotent wish-granting device said to fulfill any desire. Years have passed since the end of the Fifth Holy Grail War in Japan. Now, signs portend the emergence of a new Holy Grail in the western American city of Snowfield. Sure enough, Masters and Servants begin to gather... <br><br>\n\nA missing Servant class...<br>\nImpossible Servant summonings...<br>\nA nation shrouded in secrecy...<br>\nAnd a city created as a battleground.<br>\n<br>\nIn the face of such irregularities, the Holy Grail War is twisted and driven into the depth of madness. Let the curtain rise on a masquerade of humans and heroes, made to dance upon the stage of a false Holy Grail. <i>This is a Holy Grail War covered in lies.</i>\n<br><br>\n(Source: Official Site, Aniplex USA, edited)\n<br><br>\n<i>Notes:</i><br>\n•  <i>Special premiere of Episode 1 in its English Dub occurred in Los Angeles at the Fate 20th Anniversary Showcase event and as well through Crunchyroll’s YouTube Channel on November 23, 2024 before the Japanese television premiere.</i><br>\n•  <i>The Japanese advanced premiere occurred during the \"Fate New Year's Eve TV Special 2024\" on December 31, 2024.</i>",
+    "descricoes_pt": "Em uma Guerra do Santo Graal, Magos (Mestres) e seus Espíritos Heróicos (Servos) lutam pelo controle do Santo Graal – um dispositivo onipotente de realização de desejos que supostamente realiza qualquer desejo. Anos se passaram desde o fim da Quinta Guerra do Santo Graal no Japão. Agora, os sinais pressagiam o surgimento de um novo Santo Graal na cidade de Snowfield, no oeste americano. Com certeza, Mestres e Servos começam a se reunir... <br><br>\n\nUma classe Servo desaparecida...<br>\nInvocações impossíveis de servos...<br>\nUma nação envolta em segredo...<br>\nE uma cidade criada como campo de batalha.<br>\n<br>\nPerante tais irregularidades, a Guerra do Santo Graal é distorcida e levada às profundezas da loucura. Deixe a cortina subir para um baile de máscaras de humanos e heróis, obrigados a dançar no palco de um falso Santo Graal. <i>Esta é uma Guerra do Santo Graal coberta de mentiras.</i>\n<br><br>\n(Fonte: Site Oficial, Aniplex USA, editado)\n<br><br>\n<i>Notas:</i><br>\n• <i>A estreia especial do episódio 1 em dublagem em inglês ocorreu em Los Angeles, no evento Fate 20th Anniversary Showcase e também no canal da Crunchyroll no YouTube em 23 de novembro de 2024, antes da estreia na televisão japonesa.</i><br>\n• <i>A estreia avançada japonesa ocorreu durante o \"Fate New Year's Eve TV Special 2024\" em 31 de dezembro de 2024.</i>",
+    "generos": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Mystery",
+      "Supernatural"
+    ],
+    "episodes_total": 13,
+    "duration": 25,
+    "status": "RELEASING",
+    "averageScore": 81,
+    "popularity": 45324,
+    "favourites": 724,
+    "studios": [
+      "Aniplex",
+      "A-1 Pictures",
+      "Notes",
+      "TOKYO MX",
+      "BS11",
+      "Contents Seed"
+    ],
+    "staff": [
+      {
+        "name": "Type-Moon",
+        "role": "Original Story",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n97582-3Mi4DbWITF4T.jpg"
+      },
+      {
+        "name": "Ryougo Narita",
+        "role": "Original Story",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n97948-pWX8scWPP2uR.png"
+      },
+      {
+        "name": "Kinoko Nasu",
+        "role": "Supervisor",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n98250-ouNNikoA7L9c.jpg"
+      },
+      {
+        "name": "Kinoko Nasu",
+        "role": "Design Assistance",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n98250-ouNNikoA7L9c.jpg"
+      },
+      {
+        "name": "Tomotaka Takeuchi",
+        "role": "Planning",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/4054.jpg"
+      },
+      {
+        "name": "Jun Shibata",
+        "role": "2nd Key Animation (ep 2)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg"
+      },
+      {
+        "name": "Hiroyuki Sawano",
+        "role": "Insert Song Composition (\"BELONG\"; ep 1)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103509-IzuF5bIsiQnH.jpg"
+      },
+      {
+        "name": "Hiroyuki Sawano",
+        "role": "Theme Song Composition (OP)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103509-IzuF5bIsiQnH.jpg"
+      },
+      {
+        "name": "Hiroyuki Sawano",
+        "role": "Insert Song Arrangement (\"BELONG\"; ep 1)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103509-IzuF5bIsiQnH.jpg"
+      },
+      {
+        "name": "Hiroyuki Sawano",
+        "role": "Music",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103509-IzuF5bIsiQnH.jpg"
+      },
+      {
+        "name": "Hiroyuki Sawano",
+        "role": "Theme Song Arrangement (OP)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103509-IzuF5bIsiQnH.jpg"
+      },
+      {
+        "name": "Hiroaki Gouda",
+        "role": "Assistant Animation Director (ep 1)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105295-hc39TATg1Gb0.jpg"
+      },
+      {
+        "name": "Hiroaki Gouda",
+        "role": "Key Animation (ep 2)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105295-hc39TATg1Gb0.jpg"
+      },
+      {
+        "name": "Gen Urobuchi",
+        "role": "Design Assistance",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105308-AGdgHFIC2YSV.jpg"
+      },
+      {
+        "name": "Gen Urobuchi",
+        "role": "Supervisor",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n105308-AGdgHFIC2YSV.jpg"
+      },
+      {
+        "name": "Atsuhiro Iwakami",
+        "role": "Planning",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109031-dwx9wRDFxquk.jpg"
+      },
+      {
+        "name": "Shizuki Morii",
+        "role": "Original Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n109963-Kh50qDwkLolR.png"
+      },
+      {
+        "name": "Yasumasa Koyama",
+        "role": "Sound Effects",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n111053-JqHbuORNk3e5.png"
+      },
+      {
+        "name": "Kiyomune Miwa",
+        "role": "Magic Research",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n113377-yltTi1ezMDFv.jpg"
+      },
+      {
+        "name": "Yuuichirou Higashide",
+        "role": "Supervisor",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n113537-AZ0pykUwTwg8.jpg"
+      },
+      {
+        "name": "Yuuichirou Higashide",
+        "role": "Design Assistance",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n113537-AZ0pykUwTwg8.jpg"
+      },
+      {
+        "name": "Oka Okazaki",
+        "role": "Animation Director (ep 1)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n117599-yxy7Mnuxk5wa.jpg"
+      },
+      {
+        "name": "Oka Okazaki",
+        "role": "Key Animation (ep 1)",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n117599-yxy7Mnuxk5wa.jpg"
+      },
+      {
+        "name": "Oka Okazaki",
+        "role": "Sub Character Design",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n117599-yxy7Mnuxk5wa.jpg"
+      },
+      {
+        "name": "Masanori Tsuchiya",
+        "role": "Sound Director",
+        "language": "JAPANESE",
+        "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118429-eFZyGyfkQN9f.jpg"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Artoria Pendragon",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
+        "voiceActors": []
+      },
+      {
+        "name": "Heracles",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b504-2k7LldrHYSAP.png",
+        "voiceActors": [
+          {
+            "name": "Tadahisa Saizen",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/1359.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Kirei Kotomine",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b506-qeg0TqitdCMS.png",
+        "voiceActors": []
+      },
+      {
+        "name": "Gilgamesh",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
+        "voiceActors": [
+          {
+            "name": "Tomokazu Seki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95001-vm0RtZhmlzhK.png"
+          },
+          {
+            "name": "David Vincent",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n101457-DXEZhScJUr5I.png"
+          }
+        ]
+      },
+      {
+        "name": "Waver Velvet",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16023-gfwOgU1743ff.png",
+        "voiceActors": [
+          {
+            "name": "Daisuke Namikawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95087-6dlBBbejsPyg.png"
+          },
+          {
+            "name": "Lucien Dodge",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n115853-aVnQRsRBXXsn.png"
+          }
+        ]
+      },
+      {
+        "name": "Sella",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b44025-IxzAC5F26k9R.jpg",
+        "voiceActors": []
+      },
+      {
+        "name": "Ayaka Sajyou",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b54223-CEs1n0hKjakd.png",
+        "voiceActors": [
+          {
+            "name": "Kana Hanazawa",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95185-x8ZYvtN7SegC.png"
+          },
+          {
+            "name": "Anjali Kunapaneni",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n242720-04l6I3WfVvnB.png"
+          }
+        ]
+      },
+      {
+        "name": "Enkidu",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b60059-ErZDIiDz7tKq.png",
+        "voiceActors": [
+          {
+            "name": "Yuu Kobayashi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95034-AwobjrcmkMi9.png"
+          },
+          {
+            "name": "Marin Miller",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102992-kUemjnp5GMo2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Assassin",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76520-0qLVeJrHS77v.jpg",
+        "voiceActors": [
+          {
+            "name": "Lynn",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n118806-AlHvdje5aHje.png"
+          },
+          {
+            "name": "Jeannie Tirado",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119618-8RlAUY2Te7hw.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Tsubaki Kuruoka",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76522-hJXdbSEazxji.png",
+        "voiceActors": [
+          {
+            "name": "Aoi Koga",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n123268-zIZLjZ5Xfbk4.png"
+          }
+        ]
+      },
+      {
+        "name": "Faldeus Dioland",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/87297-UMq5Y8TUq8Y1.jpg",
+        "voiceActors": [
+          {
+            "name": "Junya Enoki",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119319-yIrrUOUaJuSm.png"
+          },
+          {
+            "name": "Micah Solusod",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8686.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Rohngall",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/87299-xVRW65pZV8JC.jpg",
+        "voiceActors": [
+          {
+            "name": "Shunsuke Sakuya",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n102492-pQ40ldxp1aXB.png"
+          },
+          {
+            "name": "David Collins",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129500-uLz37lvyhT6P.png"
+          }
+        ]
+      },
+      {
+        "name": "Tine Chelc",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87307-naKVYwZXTYuF.jpg",
+        "voiceActors": [
+          {
+            "name": "Sumire Morohoshi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106404-uodatsBbsnJh.png"
+          },
+          {
+            "name": "Dani Chambers",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129030-JpDHbjigIejb.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Rider",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/87309.jpg",
+        "voiceActors": []
+      },
+      {
+        "name": "Orlando Reeve",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87313-eqVc91PCWGQu.jpg",
+        "voiceActors": [
+          {
+            "name": "Wataru Hatano",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95098-x6T2xOTuvkuY.jpg"
+          },
+          {
+            "name": "Christopher Wehkamp",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n117629-w22t54KeomD3.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Jester  Karture",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87315-qKBNwZOLxpq6.jpg",
+        "voiceActors": [
+          {
+            "name": "Tatsumaru Tachibana",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n137436-Nm5rgzlEknqg.png"
+          },
+          {
+            "name": "Clifford Chapin",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n119609-0LGmxEBb7PS9.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Flatt  Escardos",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87319-t3o6viRp1ci4.jpg",
+        "voiceActors": [
+          {
+            "name": "Yoshitsugu Matsuoka",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n106817-mioGQjbTWWQ6.png"
+          },
+          {
+            "name": "Khoi Dao",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n129892-5cCk7dvQvKKj.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Berserker",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/87321-pGFnMVgo41zF.jpg",
+        "voiceActors": [
+          {
+            "name": "Kenyuu Horiuchi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/262.jpg"
+          },
+          {
+            "name": "Joe Thomas",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n103009-vwszihX8nXWB.png"
+          }
+        ]
+      },
+      {
+        "name": "Gray",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120755-pPTdmFrsmG8z.jpg",
+        "voiceActors": []
+      },
+      {
+        "name": "Richard I",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127453-5hx20va8HGzd.png",
+        "voiceActors": [
+          {
+            "name": "Yuuki Ono",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96154-B8GAO9wm1Fbd.jpg"
+          },
+          {
+            "name": "Ben Balmaceda",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n193208-kKEKtmb5BTiw.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Sigma",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138590-pT2mqjfz9GN4.jpg",
+        "voiceActors": [
+          {
+            "name": "Gakuto Kajiwara",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n123286-TfHayiK4hqbk.png"
+          }
+        ]
+      },
+      {
+        "name": "Wolf",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138619-2XZcyZ81DRui.png",
+        "voiceActors": []
+      },
+      {
+        "name": "Francesca  Prelati",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138620-xfOnWeYJbtBX.jpg",
+        "voiceActors": [
+          {
+            "name": "Maaya Uchida",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n108639-LLrR4WptCh5s.png"
+          },
+          {
+            "name": "Deneen Melody",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n152956-IG4h2JgMxuEz.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Hansa Cervantes",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138621-uoe5RNf2XHV4.png",
+        "voiceActors": [
+          {
+            "name": "Katsuyuki Konishi",
+            "language": "JAPANESE",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95020-uOJO2IlwpcX0.png"
+          },
+          {
+            "name": "Kevin Andrew Rivera",
+            "language": "ENGLISH",
+            "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n336527-zUza4nys27Nm.png"
+          }
+        ]
+      },
+      {
+        "name": "Watcher",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138622-wIF5zQxjJ6Wh.png",
+        "voiceActors": []
+      }
+    ],
+    "relations": [
+      {
+        "id": 86753,
+        "title": {
+          "titles": "{'romaji': 'Fate/strange Fake', 'english': None, 'native': 'Fate/strange Fake'}"
+        },
+        "type": "MANGA"
+      },
+      {
+        "id": 50006,
+        "title": {
+          "titles": "{'romaji': 'Fate/strange Fake', 'english': None, 'native': 'Fate/strange Fake'}"
+        },
+        "type": "MANGA"
+      },
+      {
+        "id": 154966,
+        "title": {
+          "titles": "{'romaji': 'Fate/strange Fake: Whispers of Dawn', 'english': 'Fate/strange Fake -Whispers of Dawn-', 'native': 'Fate/strange Fake -Whispers of Dawn-'}"
+        },
+        "type": "ANIME"
+      }
+    ],
+    "trailer": {
+      "site": "youtube",
+      "id": "k1G8EvZg_BY"
+    },
+    "externalLinks": [
+      {
+        "site": "Official Site",
+        "url": "https://fate-strange-fake.com"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/Fate_SF_Anime"
+      },
+      {
+        "site": "Twitter",
+        "url": "https://twitter.com/FateSF_Anime_EN"
+      },
+      {
+        "site": "Official Site",
+        "url": "https://fatesf-anime.com"
+      },
+      {
+        "site": "Facebook",
+        "url": "https://www.facebook.com/FateSF.Anime.EN"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/series/G4PH0WJQZ/fatestrange-fake"
+      }
+    ],
+    "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166617-34fpC9y47tTx.png",
+    "fanart": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/166617-P4w3p0H4lE1O.jpg"
   },
   {
     "nome": "Dark Moon: Tsuki no Saidan",
@@ -8465,7 +9892,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 64,
-    "popularity": 7865,
+    "popularity": 8001,
     "favourites": 116,
     "studios": [
       "Aniplex",
@@ -8824,7 +10251,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 59,
-    "popularity": 3497,
+    "popularity": 3537,
     "favourites": 44,
     "studios": [
       "TBS",
@@ -9065,7 +10492,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 69,
-    "popularity": 10318,
+    "popularity": 10545,
     "favourites": 86,
     "studios": [
       "Qzil.la",
@@ -9338,7 +10765,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 64,
-    "popularity": 11746,
+    "popularity": 11941,
     "favourites": 125,
     "studios": [
       "A.C.G.T.",
@@ -9697,7 +11124,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 67,
-    "popularity": 12907,
+    "popularity": 13127,
     "favourites": 123,
     "studios": [
       "Ashi Productions",
@@ -9930,7 +11357,7 @@
   {
     "nome": "Toumei Otoko to Ningen Onna: Sonouchi Fuufu ni Naru Futari",
     "tipo": "Legendado",
-    "nota": "3.4",
+    "nota": "3.3",
     "url": "https://goyabu.io/anime/toumei-otoko-to-ningen-onna-sonouchi-fuufu-ni-naru-futari",
     "episodios": [
       {
@@ -9960,7 +11387,7 @@
     "duration": 24,
     "status": "RELEASING",
     "averageScore": 70,
-    "popularity": 11927,
+    "popularity": 12067,
     "favourites": 125,
     "studios": [
       "project No.9",
