@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # scraper/main.py
+
 import json
 import time
 import re
@@ -16,7 +17,6 @@ from sites.goyabu.AniList.anilist_api import (
     buscar_detalhes_anime
 )
 
-# ð¹ Logger self-healing
 from core.error_logger import log_error
 
 # --------------------------------------------------
@@ -27,14 +27,15 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 OUTPUT_FILE = OUTPUT_DIR / "animes.json"
 
 # --------------------------------------------------
-# ERROS (LEGADO)
+# ERROS
 # --------------------------------------------------
 ERROS_DIR = OUTPUT_DIR / "ERROS"
 ERROS_DIR.mkdir(parents=True, exist_ok=True)
 ERROS_FILE = ERROS_DIR / "Erros.txt"
+DASHBOARD_FILE = ERROS_DIR / "dashboard.json"   # 🔧 AJUSTE IA
 
 # --------------------------------------------------
-# LOG DE ERROS (LEGADO â NÃO REMOVIDO)
+# REGISTRO DE ERROS
 # --------------------------------------------------
 def registrar_erro(tipo, anime=None, url=None, erro=None, extra=None):
     with open(ERROS_FILE, "a", encoding="utf-8") as f:
@@ -51,22 +52,30 @@ def registrar_erro(tipo, anime=None, url=None, erro=None, extra=None):
         f.write(f"TIMESTAMP: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
 # --------------------------------------------------
-# FUNÃÃO AUXILIAR PARA JSON
+# 🔧 AJUSTE IA — DASHBOARD HELPERS
 # --------------------------------------------------
-def to_dict(obj):
-    if obj is None:
-        return None
-    elif isinstance(obj, (str, int, float, bool)):
-        return obj
-    elif isinstance(obj, list):
-        return [to_dict(item) for item in obj]
-    elif hasattr(obj, "__dict__"):
-        return {k: to_dict(v) for k, v in obj.__dict__.items()}
-    else:
-        return str(obj)
+def carregar_dashboard():
+    if not DASHBOARD_FILE.exists():
+        return {}
+    return json.loads(DASHBOARD_FILE.read_text(encoding="utf-8"))
+
+def marcar_erro_corrigido(url):
+    dashboard = carregar_dashboard()
+    for e in dashboard.get("errors", []):
+        if e.get("url") == url and not e.get("fixed"):
+            e["fixed"] = True
+            e["pending_retry"] = False
+    DASHBOARD_FILE.write_text(json.dumps(dashboard, indent=2, ensure_ascii=False), encoding="utf-8")
+
+def obter_mapped_title(url):
+    dashboard = carregar_dashboard()
+    for e in dashboard.get("errors", []):
+        if e.get("url") == url and e.get("mapped_title"):
+            return e.get("mapped_title")
+    return None
 
 # --------------------------------------------------
-# NORMALIZAÃÃO DE TÃTULOS
+# NORMALIZAÇÃO DE TÍTULOS
 # --------------------------------------------------
 def normalizar_titulo(titulo):
     import unicodedata
@@ -93,11 +102,28 @@ def carregar_existentes():
     return []
 
 # --------------------------------------------------
-# BUSCA ANIList (FUZZY + FALLBACK)
+# FUNÇÃO HELPER PARA SERIALIZAÇÃO
+# --------------------------------------------------
+def serialize_obj(obj):
+    if isinstance(obj, list):
+        return [serialize_obj(o) for o in obj]
+    elif isinstance(obj, dict):
+        return {k: serialize_obj(v) for k, v in obj.items()}
+    elif hasattr(obj, "__dict__"):
+        return {k: serialize_obj(v) for k, v in vars(obj).items()}
+    else:
+        return obj
+
+# --------------------------------------------------
+# BUSCA ANILIST (COM IA TITLE MAPPING)
 # --------------------------------------------------
 def buscar_anime_por_url_ou_fuzzy(titulo, url=None):
-    titulo_norm = normalizar_titulo(titulo)
+    # 🔧 AJUSTE IA — usa título mapeado se existir
+    mapped = obter_mapped_title(url)
+    if mapped:
+        titulo = mapped
 
+    titulo_norm = normalizar_titulo(titulo)
     try:
         possiveis = buscar_titulos_disponiveis(titulo_norm[:50])
         if possiveis:
@@ -105,20 +131,19 @@ def buscar_anime_por_url_ou_fuzzy(titulo, url=None):
             if match:
                 ani_data = buscar_detalhes_anime_por_titulo(match[0])
                 if ani_data:
+                    ani_data.thumbnail = ani_data.coverImage if hasattr(ani_data, "coverImage") else ""
+                    ani_data.fanart = ani_data.bannerImage or ani_data.coverImage or ""
                     return ani_data
     except Exception as e:
         registrar_erro("ANILIST_FALHA", titulo, url, str(e))
-        log_error(anime=titulo, url=url, stage="anilist",
-                  error_type="ANILIST_FALHA", message=str(e))
+        log_error(anime=titulo, url=url, stage="anilist", error_type="ANILIST_FALHA", message=str(e))
 
     registrar_erro("ANIME_NAO_ENCONTRADO", titulo, url)
-    log_error(anime=titulo, url=url, stage="anilist",
-              error_type="ANIME_NAO_ENCONTRADO",
-              message="Anime nÃ£o encontrado no AniList")
+    log_error(anime=titulo, url=url, stage="anilist", error_type="ANIME_NAO_ENCONTRADO", message="Anime não encontrado no AniList")
     return None
 
 # --------------------------------------------------
-# FUNÃÃO PRINCIPAL
+# FUNÇÃO PRINCIPAL
 # --------------------------------------------------
 def main(max_pages=None, delay=1.5):
     anime_list_scraper = GoyabuAnimeListScraper()
@@ -132,28 +157,51 @@ def main(max_pages=None, delay=1.5):
     fila_retry = []
     pagina = 1
 
-    print("🚀 Iniciando scraper hibrido Goyabu + AniList")
+    print("🚀 Iniciando scraper híbrido Goyabu + AniList\n")
 
     while True:
         if max_pages and pagina > max_pages:
             break
 
+        print(f"📄 Coletando Página {pagina}")
         animes = anime_list_scraper.listar(pagina)
         if not animes:
             break
 
         for anime in animes:
+            print(f"\n🎬 {anime['titulo']}")
+
+            ani_data = buscar_anime_por_url_ou_fuzzy(anime["titulo"], anime["link"])
+            ani_dict = ani_data.__dict__ if ani_data else {}
+
             anime_obj = {
                 "nome": anime["titulo"],
+                "tipo": "Legendado",
+                "nota": ani_dict.get("averageScore", ""),
                 "url": anime["link"],
-                "episodios": []
+                "episodios": [],
+                "títulos": ani_dict.get("titles", {}),
+                "descricoes": ani_dict.get("description", ""),
+                "descricoes_pt": GoogleTranslator(source='en', target='pt').translate(ani_dict.get("description", "")) if ani_data else "",
+                "generos": ani_dict.get("genres", []),
+                "episodes_total": ani_dict.get("episodes", 0),
+                "duration": ani_dict.get("duration", 0),
+                "status": ani_dict.get("status", ""),
+                "averageScore": ani_dict.get("averageScore", 0),
+                "popularity": ani_dict.get("popularity", 0),
+                "favourites": ani_dict.get("favourites", 0),
+                "studios": ani_dict.get("studios", []),
+                "staff": serialize_obj(ani_dict.get("staff", [])),
+                "characters": serialize_obj(ani_dict.get("characters", [])),
+                "relations": serialize_obj(ani_dict.get("relations", [])),
+                "trailer": serialize_obj(ani_dict.get("trailer", {})),
+                "externalLinks": serialize_obj(ani_dict.get("externalLinks", [])),
+                "thumbnail": ani_dict.get("thumbnail", ""),
+                "fanart": ani_dict.get("fanart", "")
             }
 
             try:
                 episodios = anime_page_scraper.listar_episodios(anime["link"])
-                if not episodios:
-                    raise Exception("Sem episÃ³dios")
-
                 for ep in episodios:
                     streams = episode_page_scraper.obter_streams(ep["link"])
                     anime_obj["episodios"].append({
@@ -162,62 +210,23 @@ def main(max_pages=None, delay=1.5):
                         "streams": streams
                     })
 
+                # 🔧 AJUSTE IA — marca erro resolvido
+                marcar_erro_corrigido(anime["link"])
+
             except Exception as e:
                 fila_retry.append(anime)
                 registrar_erro("RETRY_AGENDADO", anime["titulo"], anime["link"], str(e))
-                log_error(anime=anime["titulo"], url=anime["link"],
-                          stage="retry_queue",
-                          error_type="RETRY_AGENDADO",
-                          message="Agendado para retry")
+                log_error(anime=anime["titulo"], url=anime["link"], stage="retry_queue", error_type="RETRY_AGENDADO", message="Agendado para retry")
 
             antigo = existentes_por_url.get(anime["link"])
-            if antigo and anime_esta_completo(antigo) and not anime_esta_completo(anime_obj):
-                resultado_final.append(antigo)
-            else:
-                resultado_final.append(anime_obj)
+            resultado_final.append(antigo if antigo and anime_esta_completo(antigo) else anime_obj)
 
+        salvar_parcial(resultado_final)
         pagina += 1
-
-    # --------------------------------------------------
-    # ð RETRY INTELIGENTE (ERRO 5)
-    # --------------------------------------------------
-    if fila_retry:
-        print(f"\nð Retry inteligente: {len(fila_retry)} animes")
-        for anime in fila_retry:
-            try:
-                episodios = anime_page_scraper.listar_episodios(anime["link"])
-                if not episodios:
-                    continue
-
-                anime_retry = {
-                    "nome": anime["titulo"],
-                    "url": anime["link"],
-                    "episodios": []
-                }
-
-                for ep in episodios:
-                    streams = episode_page_scraper.obter_streams(ep["link"])
-                    anime_retry["episodios"].append({
-                        "episodio": ep["numero"],
-                        "url": ep["link"],
-                        "streams": streams
-                    })
-
-                resultado_final = [
-                    a for a in resultado_final if a["url"] != anime["link"]
-                ]
-                resultado_final.append(anime_retry)
-
-                log_error(anime=anime["titulo"], url=anime["link"],
-                          stage="retry",
-                          error_type="RETRY_SUCESSO",
-                          message="Retry bem-sucedido")
-
-            except Exception as e:
-                registrar_erro("RETRY_FALHOU", anime["titulo"], anime["link"], str(e))
+        time.sleep(delay)
 
     salvar_final(resultado_final)
-    print("\nâ Scraping finalizado com retry inteligente")
+    print("\n🌟 Scraping finalizado")
 
 # --------------------------------------------------
 # SALVAMENTO
@@ -234,4 +243,4 @@ def salvar_final(data):
 # ENTRYPOINT
 # --------------------------------------------------
 if __name__ == "__main__":
-    main()
+    main(max_pages=1)
