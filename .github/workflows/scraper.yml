@@ -36,7 +36,7 @@ jobs:
           touch output/ERROS/Erros.txt
 
       - name: Run scraper (initial)
-        run: python scraper/main.py
+        run: python main.py
         env:
           PUTER_USERNAME: ${{ secrets.PUTER_USERNAME }}
           PUTER_PASSWORD: ${{ secrets.PUTER_PASSWORD }}
