@@ -33,9 +33,12 @@ def carregar_dashboard() -> Dict[str, Any]:
         return {"errors": [], "stats": {}}
 
     try:
-        return json.loads(DASHBOARD_FILE.read_text(encoding="utf-8"))
+        data = json.loads(DASHBOARD_FILE.read_text(encoding="utf-8"))
+        data.setdefault("errors", [])
+        data.setdefault("stats", {})
+        return data
     except Exception:
-        # Falha de leitura não deve quebrar o scraper
+        # Falha de leitura não deve quebrar o pipeline
         return {"errors": [], "stats": {}}
 
 
@@ -118,13 +121,27 @@ def atualizar_dashboard():
     dashboard = carregar_dashboard()
     dashboard.setdefault("errors", [])
 
+    # 🔁 MIGRAÇÃO AUTOMÁTICA DE ERROS ANTIGOS (SEM error_id)
+    existentes: Dict[str, Dict[str, Any]] = {}
+
+    for e in dashboard["errors"]:
+        if "error_id" not in e or not e["error_id"]:
+            tipo = e.get("type", "")
+            url = e.get("url", "")
+            anime = e.get("anime", "")
+            stage = e.get("stage", "")
+            e["error_id"] = gerar_id(f"{tipo}|{url}|{anime}|{stage}")
+
+        existentes[e["error_id"]] = e
+
+    # Parse de novos erros vindos do Erros.txt
     novos_erros = parse_erros()
-    existentes = {e["error_id"]: e for e in dashboard["errors"]}
 
     # Adiciona apenas erros realmente novos
     for erro in novos_erros:
         if erro["error_id"] not in existentes:
             dashboard["errors"].append(erro)
+            existentes[erro["error_id"]] = erro
 
     # Estatísticas rápidas
     dashboard["stats"] = {
