@@ -3,71 +3,66 @@ name: Scraper Goyabu Self-Healing + AniList
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"  # diário às 2h UTC
+    - cron: "0 2 * * *"
 
 jobs:
   scraper:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
 
     steps:
-      # 1️⃣ Checkout
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
 
-      # 2️⃣ Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
-      # 3️⃣ Instalar dependências via requirements.txt
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
           pip install -r requirements.txt
 
-      # 4️⃣ Preparar estrutura de pastas e arquivos
       - name: Prepare output folders
         run: |
           mkdir -p output/ERROS rules
           [ -f output/animes.json ] || echo "[]" > output/animes.json
-          [ -f output/ERROS/dashboard.json ] || echo '{}' > output/ERROS/dashboard.json
+          [ -f output/ERROS/dashboard.json ] || echo '{"errors":[]}' > output/ERROS/dashboard.json
           touch output/ERROS/Erros.txt
 
-      # 5️⃣ Rodar scraper (primeira passada)
       - name: Run scraper (initial)
-        run: python main.py
+        run: python scraper/main.py
         env:
-          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
-          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
-          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
-          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
+          PUTER_USERNAME: ${{ secrets.PUTER_USERNAME }}
+          PUTER_PASSWORD: ${{ secrets.PUTER_PASSWORD }}
 
-      # 6️⃣ AutoFix (IA aprende + marca retry)
-      - name: Run AutoFix
-        run: python auto_fix.py
+      - name: Build error dashboard
+        run: python core/error_dashboard.py
+
+      - name: Run AutoFix (IA)
+        run: python autofix.py
         env:
-          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
-          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
-          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
-          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
+          PUTER_USERNAME: ${{ secrets.PUTER_USERNAME }}
+          PUTER_PASSWORD: ${{ secrets.PUTER_PASSWORD }}
 
-      # 7️⃣ Rodar scraper novamente (retry pós-IA)
       - name: Run scraper (retry after IA)
-        run: python main.py
+        run: python scraper/main.py
         env:
-          GEMINI_KEY_1: ${{ secrets.GEMINI_KEY_1 }}
-          GEMINI_KEY_2: ${{ secrets.GEMINI_KEY_2 }}
-          GEMINI_KEY_3: ${{ secrets.GEMINI_KEY_3 }}
-          GEMINI_KEY_4: ${{ secrets.GEMINI_KEY_4 }}
+          PUTER_USERNAME: ${{ secrets.PUTER_USERNAME }}
+          PUTER_PASSWORD: ${{ secrets.PUTER_PASSWORD }}
 
-      # 8️⃣ Commit automático
+      - name: Rebuild error dashboard
+        run: python core/error_dashboard.py
+
       - name: Commit & Push results
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add output/animes.json output/ERROS rules || true
-          git commit -m "🤖 Scraper auto-healing update [skip ci]" || echo "Nada para commitar"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add output rules || true
+          git commit -m "🤖 Scraper self-healing update [skip ci]" || echo "Nada para commitar"
           git push
