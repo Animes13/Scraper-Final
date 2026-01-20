@@ -5,3 +5,6 @@ html5lib
 deep-translator
 google-genai
 httpx
+putergenai
+aiohttp
+aiofiles
