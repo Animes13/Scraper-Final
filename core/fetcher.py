@@ -14,17 +14,23 @@ DEFAULT_HEADERS = {
 
 
 class Fetcher:
-    def __init__(self, base_url=None, headers=None, timeout=20, retries=3):
+    def __init__(self, base_url=None, headers=None, timeout=20, retries=3, fast_mode=False):
+        """
+        fast_mode=True desativa delays longos para testes rápidos.
+        """
         self.base_url = base_url
         self.headers = headers or DEFAULT_HEADERS
         self.timeout = timeout
         self.retries = retries
+        self.fast_mode = fast_mode
         self.session = requests.Session()
         self.session.headers.update(self.headers)
 
     def _delay(self):
-        # Delay aleatório entre requisições para não ser bloqueado
-        time.sleep(random.uniform(0.8, 1.8))
+        if self.fast_mode:
+            time.sleep(0.05)  # delay mínimo de 50ms
+        else:
+            time.sleep(random.uniform(0.8, 1.8))
 
     # --------------------------------------------------
     def get(self, url, headers=None, timeout=None):
